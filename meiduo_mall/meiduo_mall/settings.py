@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.users',
 ]
 
 MIDDLEWARE = [
@@ -73,13 +74,13 @@ WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'meiduo_mall',  #创建的表名
-        'HOST':'127.0.0.1',
-        'PORT':3306,
-        'USER':'root',  #用户名
-        'PASSWORD':'123456'  #密码
+        'default':{
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'meiduo_mall', # 数据库名称
+            'HOST': '127.0.0.1', # 数据库主机
+            'PORT': 3306,# 端⼝号
+            'USER': 'meiduouser', # 数据库账号
+            'PASSWORD': '123456' # 数据库密码
     }
 }
 
@@ -183,3 +184,5 @@ LOGGING = {
         },
     }
 }
+# 指定本项⽬⽤户模型类
+AUTH_USER_MODEL = 'users.User'
