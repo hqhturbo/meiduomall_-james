@@ -2,7 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37e96108-afc0-4c1d-b0ac-fc68924e99ff" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/meiduo_mall.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/16.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/goods/9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/QQ-weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/adv01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/adv02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bar_code.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/clock.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/clock.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/find-password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods/goods009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/goods_450.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/icons02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/interval_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/left_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/login_banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/pay_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/pic_code.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/register_banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/shine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/shop_cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slide01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slide02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slide03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/slide04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/stars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/time_count_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/axios-0.18.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/host.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery-1.12.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/vue-2.5.16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/vue-cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +110,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../shiweite_code_blog" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -70,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635326130771</updated>
       <workItem from="1635326132901" duration="2272000" />
-      <workItem from="1635398459184" duration="1180000" />
+      <workItem from="1635398459184" duration="6536000" />
     </task>
     <servers />
   </component>
