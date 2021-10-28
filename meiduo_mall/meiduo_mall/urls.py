@@ -25,4 +25,5 @@ def test_log(request): # 3、调用日志器记录日志
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('test_log/', test_log),
 ]
