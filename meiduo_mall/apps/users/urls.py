@@ -6,4 +6,5 @@ from apps.users.views import UsernameCountView
 
 urlpatterns = [
     path('usernames', views.UsernameCountView.as_view()),
+    path('mobile',views.MobileCountView.as_view())
 ]

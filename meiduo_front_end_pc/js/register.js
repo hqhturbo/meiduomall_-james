@@ -7,7 +7,11 @@ var app = new Vue({
     error_password: false,
     password:'',
     password2:'',
-    error_check_password:false
+    error_check_password:false,
+    error_phone:false,
+    mobile:'',
+    error_phone_message:''
+
   },
   methods: {
     // 用户名
@@ -46,6 +50,28 @@ var app = new Vue({
       }
       else {
         this.error_check_password = false
+      }
+    },
+    // 手机号
+    check_phone:function (){
+      if (!/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/.test(this.mobile)){
+        this.error_phone_message = '请输入正确的手机号码'
+        this.error_phone = true
+      }
+      else {
+        this.error_phone = false
+      }
+      if(this.error_phone==false){
+        axios.get('http://127.0.0.1:8000/mobile?mobile='+this.mobile).then(function (resp){
+          if (resp.data.count==1){
+            app.error_phone_message = '该手机号已存在'
+            console.log(this.error_phone_message)
+            app.error_phone = true
+          }
+          else{
+            app.error_phone = false
+          }
+        })
       }
     }
   }

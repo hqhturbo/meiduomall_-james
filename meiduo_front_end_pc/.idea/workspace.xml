@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../meiduo_mall/apps/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../meiduo_mall/apps/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../meiduo_mall/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../meiduo_mall/apps/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +63,9 @@
       <option name="presentableId" value="Default" />
       <updated>1635490493138</updated>
       <workItem from="1635490494300" duration="14614000" />
+      <workItem from="1635521920776" duration="333000" />
+      <workItem from="1635576059631" duration="967000" />
+      <workItem from="1635577066265" duration="2233000" />
     </task>
     <servers />
   </component>
@@ -77,5 +82,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
