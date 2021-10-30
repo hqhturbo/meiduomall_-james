@@ -37,9 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
+    'apps.users',
 ]
 
+AUTH_USER_MODEL = 'users.User'
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -76,7 +81,7 @@ WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'stu',
+        'NAME': 'meiduo_mall',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
@@ -102,7 +107,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
@@ -184,3 +188,12 @@ LOGGING = {
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
+
+CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:8081',
+    'http://localhost:8081',
+    'http://127.0.0.1:8848',
+    'http://localhost:8848',
+)
+CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
