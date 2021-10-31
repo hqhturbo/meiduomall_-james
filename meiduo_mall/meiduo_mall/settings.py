@@ -15,18 +15,16 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'uk^im5y8^+(&eoey3i-#zhlm4(vzkn$*z_)%d3h&@8v#m$o_(!'
+SECRET_KEY = 'h$km=@!0vxm%w+y(le+nunl5w24$7l%ed&&16$8ud#f@6$$-r='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','www.meiduo.site']
-
+ALLOWED_HOSTS = ['127.0.0.1', 'www.meiduo.site']
 
 # Application definition
 
@@ -37,13 +35,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.users.apps.UsersConfig'
+    # 'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'meiduo_mall.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR ,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,30 +63,27 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'utils.common_pross.common_data'
             ],
         },
     },
 ]
-WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 
+WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': 'django.db.backends.mysql',# 数据库引擎
-        'NAME': 'mdsc',# 数据库名称
-        'HOST': '127.0.0.1',# 数据库主机地址
-        'PORT': 3306,# 数据库端口号
-        'USER': 'root', # 用户名
-        'PASSWORD': '123456',# 密码
-        'CHARSET': 'utf8mb4'# 数据库字符编码
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'meiduo_mall',  # 数据库名称
+        'HOST': '127.0.0.1',  # 数据库主机
+        'PORT': 3306,  # 端口号
+        'USER': 'meiduouser',  # 数据库账号
+        'PASSWORD': '123456'  # 数据库密码
     }
 }
+
 # 配置缓存
 CACHES = {
     "default": {  # 默认
@@ -107,12 +105,10 @@ CACHES = {
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"  # 表示session采⽤缓存⽅式保存
 SESSION_CACHE_ALIAS = "session"  # 表示使⽤缓存的地⽅是redis的session配置节点
-
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
-GING = {
+LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,  # 是否禁⽤已经存在的⽇志器
     'formatters': {  # ⽇志信息显示的格式
@@ -168,9 +164,14 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
-
-
+# CORS
+CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:8080',
+    'http://localhost:8080',
+    'http://www.meiduo.site:8080',
+    'http://www.meiduo.site:8000'
+)
+CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
@@ -184,9 +185,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+AUTH_USER_MODEL = 'users.User'
+CORS_ORIGIN_WHITELIST = (
+'http://127.0.0.1:8080',
+)
