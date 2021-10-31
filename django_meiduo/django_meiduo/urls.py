@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import logging
+from django.contrib import admin
+from django.urls import path, include
+
 # 创建⽇志记录器
 logger = logging.getLogger('django')
 # 输出⽇志
@@ -24,4 +27,5 @@ logger.info('测试logging模块info')
 logger.error('测试logging模块error')
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('app.urls'))
 ]
