@@ -1,13 +1,26 @@
 var app = new Vue({
 	el: "#app",
 	data: {
+		// 用户名
 		username: '',
 		host:host,
 		error_name: '',
 		error_name_message: '',
+		// 手机验证
 		mobile:'',
 		error_phone:'',
 		error_phone_message:'',
+		// 密码
+		error_password:'',
+		password:'',
+		error_password_message:'',
+		// 确认密码
+		error_password2_message:'',
+		password2:'',
+		error_check_password:'',
+// 同意协议
+		allow:'',
+		error_allow:'',
 
 	},
 	methods: {
@@ -50,6 +63,25 @@ var app = new Vue({
 				})
 			}
 
+		},
+		check_pwd: function (){
+			if (!/^\w{8,20}/.test(this.password)){
+				this.error_password_message = '请输入8-20为的英文字母、数字、下划线的密码'
+				this.error_password = true
+			}
+			else {
+			    this.error_password = false
+			}
+
+		},
+		check_cpwd: function() {
+		    if (this.password2 != this.password){
+		    	this.error_password2_message = '两次密码不一致'
+				this.error_check_password = true
+			}else {
+			    this.error_check_password = false
+			}
 		}
+
 	}
 })

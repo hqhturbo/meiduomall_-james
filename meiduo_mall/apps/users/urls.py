@@ -1,8 +1,8 @@
-from django.urls import path, re_path
+from django.urls import path
 from apps.users import views
 from django.urls import path
 from apps.users import views
-from apps.users.views import UsernameCountView,MobileCountView
+from apps.users.views import *
 
 urlpatterns = [
     path('usernames/<username>/count/', views.UsernameCountView.as_view()),
