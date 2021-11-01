@@ -1,6 +1,7 @@
 var app = new Vue({
   el: '#app',
   data: {
+    host:host,
     username: '',
     error_name: false,
     error_name_message: '',
@@ -10,20 +11,27 @@ var app = new Vue({
     error_check_password:false,
     error_phone:false,
     mobile:'',
-    error_phone_message:''
-
+    error_phone_message:'',
+    uuid:'',
+    image_code:'',
+    error_image_code:false,
+    error_image_code_message:'',
+    image_code_url:'',
+  },
+  mounted() {
+    this.generate_image_code()
   },
   methods: {
     // 用户名
     check_username: function () {
-      if (!/^[A-Za-z0-9]{5,10}$/.test(this.username)) {
+      if (!/^[A-Za-z0-9]{5,11}$/.test(this.username)) {
         this.error_name_message = '用户必须5到10位的数字或字母';
         this.error_name = true;
       } else {
         this.error_name = false;
       }
       if(this.error_name==false){
-        axios.get('http://127.0.0.1:8000/usernames?username=' + this.username).then(function (rsg) {
+        axios.get(this.host + '/usernames/' + this.username + '/count/').then(function (rsg) {
           //alert(data.data.count)
           if (rsg.data.count == 1) {
             app.error_name_message = '用户名重复了';
@@ -62,7 +70,7 @@ var app = new Vue({
         this.error_phone = false
       }
       if(this.error_phone==false){
-        axios.get('http://127.0.0.1:8000/mobile?mobile='+this.mobile).then(function (resp){
+        axios.get(this.host + '/mobiles/' + this.mobile + '/count/').then(function (resp){
           if (resp.data.count==1){
             app.error_phone_message = '该手机号已存在'
             console.log(this.error_phone_message)
@@ -73,6 +81,39 @@ var app = new Vue({
           }
         })
       }
-    }
+    },
+    generate_image_code:function (){
+      this.uuid = generateUUID()
+      this.image_code_url = this.host + '/imgs/' + this.uuid + '/'
+    },
+    check_image_code:function () {
+      if (!this.image_code){
+        this.error_image_code_message = '请输入图片验证码'
+        this.error_image_code = true
+      }
+      else {
+        this.error_image_code = false
+      }
+    },
+    on_submit:function(){
+      this.check_username();
+      this.check_pwd();
+      this.check_cpwd();
+      this.check_phone();
+      if (this.error_name == false && this.error_password == false && this.error_check_password == false
+          && this.error_phone == false){
+        axios.post(this.host + '/register/',{
+          'username': this.username,
+          'password': this.password,
+          'password2': this.password2,
+          'mobile': this.mobile
+        },{
+          responseType: 'json',
+          withCredentials:true,
+        }).then(rsg=>{
+          alert(rsg.data.errmsg)
+        })
+      }
+    },
   }
 })
