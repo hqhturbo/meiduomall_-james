@@ -35,8 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.users.apps.UsersConfig'
-    # 'corsheaders',
+    'apps.users.apps.UsersConfig',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +79,7 @@ DATABASES = {
         'NAME': 'meiduo_mall',  # 数据库名称
         'HOST': '127.0.0.1',  # 数据库主机
         'PORT': 3306,  # 端口号
-        'USER': 'meiduouser',  # 数据库账号
+        'USER': 'root',  # 数据库账号
         'PASSWORD': '123456'  # 数据库密码
     }
 }
