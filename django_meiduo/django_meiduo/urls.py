@@ -27,5 +27,6 @@ from django.urls import path, include
 # logger.error('测试logging模块error')
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('app.urls'))
+    path('', include('app.urls')),
+
 ]
