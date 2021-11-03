@@ -28,5 +28,6 @@ def log(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('apps.users.urls'))
+    path('',include('apps.users.urls')),
+    path('',include('apps.verification.urls'))
 ]

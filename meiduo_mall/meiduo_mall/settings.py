@@ -36,7 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.users.apps.UsersConfig',
-    'corsheaders'
+    'corsheaders',
+    'apps.verification.apps.VerificationConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -102,6 +104,14 @@ CACHES = {
             "PASSWORD": '123456'
         }
     },
+"code": { # 验证码
+     "BACKEND": "django_redis.cache.RedisCache",
+     "LOCATION": "redis://127.0.0.1:6379/2",
+     "OPTIONS": {
+     "CLIENT_CLASS": "django_redis.client.DefaultClient",
+     "PASSWORD":'123456'
+     }
+     },
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"  # 表示session采⽤缓存⽅式保存
 SESSION_CACHE_ALIAS = "session"  # 表示使⽤缓存的地⽅是redis的session配置节点
