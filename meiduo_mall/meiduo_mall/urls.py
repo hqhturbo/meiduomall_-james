@@ -31,4 +31,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('test_log/', test_log),
     path('', include('apps.users.urls')),
+    path('', include('apps.verification.urls')),
 ]

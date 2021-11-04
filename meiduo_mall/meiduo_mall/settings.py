@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+# import django
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'apps.users',
+    'apps.verification'
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -48,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -143,6 +144,15 @@ CACHES = {
             "PASSWORD": '123456'
         }
     },
+    "code": { # 验证码
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+        "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        "PASSWORD":'123456'
+        }
+        },
+
 }
 
 LOGGING = {
@@ -190,10 +200,13 @@ SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
 
 CORS_ORIGIN_WHITELIST = (
-    'http://127.0.0.1:8081',
+    'http://127.0.0.1:8080',
     'http://localhost:8081',
     'http://127.0.0.1:8848',
     'http://localhost:8848',
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+CELERY_BROKER_URL="redis://:123456@127.0.0.1/2"
+CELERY_RESULT_BACKEND="redis://:123456@127.0.0.1/1"
