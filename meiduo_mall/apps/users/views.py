@@ -63,3 +63,41 @@ class MobileCountView(View):
         # print(count)
         return JsonResponse({'code':200, 'errmsg':'ok', 'count':count})
 
+# 登录
+class LoginView(View):
+    def post(self,request):
+        # 接受参数
+        dict = json.loads(request.body.decode())
+        username = dict.get('username')
+        password = dict.get('password')
+        remember = dict.get('remember')
+        print(username,password,remember)
+        # 校验参数
+        if not all([username,password]):
+            return JsonResponse({'code': 400, 'errmsg':'参数不全'})
+        # 动态判断用户类型，设置验证信息
+        if re.match('^1[3-9]\d9$',username):
+            # 手机号
+            User.USERNAME_FIELD = 'mobile'
+        else:
+            User.USERNAME_FIELD = 'username'
+        # 验证是否能登录
+        user = authenticate(username=username,password=password)
+        # 判断是否为空
+        if user is None:
+            return JsonResponse({'code':400, 'errmsg':'用户名或密码错误'})
+        # 状态保持
+        login(request,user)
+        # 判断是否记住用户
+        if remember != True:
+            # 如果没记住关闭失效
+            request.session.set_expiry(0)
+        else:
+            # 如果记住 设置两周
+            request.session.set_expiry(None)
+        # 返回json
+        response = JsonResponse({'code':0,'errmsg':'ok'})
+        u = json.dumps(user.nick_name)
+        # print(u)
+        response.set_cookie('username',u)
+        return response
