@@ -24,7 +24,7 @@ SECRET_KEY = 'o93qf^plxph1i+zz3_mf@l!-@g651%zs+!7tu(fk(hz6ylrdvn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','www.meiduo.site']
+ALLOWED_HOSTS = ['127.0.0.1', 'www.meiduo.site']
 
 # Application definition
 
@@ -35,14 +35,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.users.apps.UsersConfig'
+    'apps.users.apps.UsersConfig',
+    'apps.verification'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -120,6 +122,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:8080',
+    'http://127.0.0.1:8081',
+)
+
 # 配置缓存
 CACHES = {
     "default": {  # 默认
@@ -138,6 +145,15 @@ CACHES = {
             "PASSWORD": '12345'
         }
     },
+    "code": {  # 验证码
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "PASSWORD": '12345'
+        }
+    },
+
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"  # 表示session采⽤缓存⽅式保存
 SESSION_CACHE_ALIAS = "session"  # 表示使⽤缓存的地⽅是redis的session配置节点
@@ -182,3 +198,7 @@ LOGGING = {
         },
     }
 }
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
+CELERY_BROKER_URL="redis://:12345@127.0.0.1/3"
+CELERY_RESULT_BACKEND="redis://:12345@127.0.0.1/4"
