@@ -2,15 +2,14 @@
 
 from libs.yuntongxun.CCPRestSDK import REST
 
-
-# 说明：主账号，登陆云通讯网站后，可在控制台-应用中看到开发者主账号ACCOUNT SID
-_accountSid = '8a216da87ba59937017c2621b3aa21f6'
+# 说明：主账号，登陆云通讯网站后，可在"控制台-应用"中看到开发者主账号ACCOUNT SID
+_accountSid = '8aaf07087c16b0a3017c2a7a7f680654'
 
 # 说明：主账号Token，登陆云通讯网站后，可在控制台-应用中看到开发者主账号AUTH TOKEN
-_accountToken = '44da98449d3f4749897d38b11447e877'
+_accountToken = 'a3431f1b19fc4866b8d07eb0cefa3013'
 
 # 请使用管理控制台首页的APPID或自己创建应用的APPID
-_appId = '8a216da87ba59937017c2621b47d21fc'
+_appId = '8aaf07087c16b0a3017c2a7a808e065b'
 
 # 说明：请求地址，生产环境配置成app.cloopen.com
 _serverIP = 'sandboxapp.cloopen.com'
@@ -76,5 +75,5 @@ if __name__ == '__main__':
     # 参数1：测试手机号
     # 参数2（列表）：第一个位置填充模板中，第二个位置过期时间
     # 参数3：使用模板1
-    ccp.send_template_sms('15592155630', ['521521', 5], 1)
+    ccp.send_template_sms('18992056194', ['521521', 5], 1)
     print(f'刚才发送的码521521')

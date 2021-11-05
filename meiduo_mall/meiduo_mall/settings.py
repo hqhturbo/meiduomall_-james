@@ -13,13 +13,15 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import sys
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'h$km=@!0vxm%w+y(le+nunl5w24$7l%ed&&16$8ud#f@6$$-r='
+SECRET_KEY = '3hu@m@o0*@x&3r3$q!a%3liv%!uxwzy)^1no12po*36k%&&5ml'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -35,10 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.users.apps.UsersConfig',
+    'apps.users',
+    'apps.verification',
     'corsheaders',
-    'apps.verification.apps.VerificationConfig',
-
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'meiduo_mall.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR), 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,55 +77,86 @@ WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'meiduo_mall',  # 数据库名称
-        'HOST': '127.0.0.1',  # 数据库主机
-        'PORT': 3306,  # 端口号
-        'USER': 'root',  # 数据库账号
-        'PASSWORD': '123456'  # 数据库密码
-    }
-}
+                'default': {
+                    'ENGINE': 'django.db.backends.mysql',
+                    'NAME': 'meiduo',  # 数据库名称
+                    'HOST': '127.0.0.1',  # 数据库主机
+                    'PORT': 3306,  # 端⼝号
+                    'USER': 'root',  # 数据库账号
+                    'PASSWORD': '123456'  # 数据库密码
+                }
+            }
 
+# Password validation
+# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
+]
+
+# Internationalization
+# https://docs.djangoproject.com/en/2.2/topics/i18n/
+
+LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'UTC'
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = True
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+STATIC_URL = '/static/'
 # 配置缓存
 CACHES = {
     "default": {  # 默认
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/0",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "PASSWORD": '123456'
-        }
-    },
-    "session": {  # session
-        "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "PASSWORD": '123456'
+            # "PASSWORD": '123456'
         }
     },
-"code": { # 验证码
-     "BACKEND": "django_redis.cache.RedisCache",
-     "LOCATION": "redis://127.0.0.1:6379/2",
-     "OPTIONS": {
-     "CLIENT_CLASS": "django_redis.client.DefaultClient",
-     "PASSWORD":'123456'
-     }
-     },
+    "session": { # session
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+        "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        # "PASSWORD": '123456'
+        }
+    },
+    "code": {  # 验证码
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/2",
+        "OPTIONS": {
+        "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        # "PASSWORD": '123456'
+        }
+    },
 }
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"  # 表示session采⽤缓存⽅式保存
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"  # 表示session采⽤缓存
 SESSION_CACHE_ALIAS = "session"  # 表示使⽤缓存的地⽅是redis的session配置节点
-# Password validation
-# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,  # 是否禁⽤已经存在的⽇志器
     'formatters': {  # ⽇志信息显示的格式
         'verbose': {
-            'format': '%(levelname)s %(asctime)s %(module)s %(lineno)d %'
-                      '(message)s'
+            'format': '%(levelname)s %(asctime)s %(module)s %(lineno)d %(message)s'
         },
         'simple': {
             'format': '%(levelname)s %(module)s %(lineno)d %(message)s'
@@ -159,21 +191,7 @@ LOGGING = {
         },
     }
 }
-
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
-]
+AUTH_USER_MODEL = 'users.User'
 # CORS
 CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8080',
@@ -181,25 +199,11 @@ CORS_ORIGIN_WHITELIST = (
     'http://www.meiduo.site:8080',
     'http://www.meiduo.site:8000'
 )
-CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
-# Internationalization
-# https://docs.djangoproject.com/en/2.2/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
-STATIC_URL = '/static/'
-AUTH_USER_MODEL = 'users.User'
-CORS_ORIGIN_WHITELIST = (
-'http://127.0.0.1:8080',
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'http://127.0.0.1:8080',
+#     'http://localhost:8080',
+#     'http://www.meiduo.site:8080',
+#     'http://www.meiduo.site:8000',
+# )
+CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True # 允许携带cookie

@@ -1,4 +1,4 @@
-# meiduomall_James
+# meiduomall_strive
 
 #### Description
 美多商城
