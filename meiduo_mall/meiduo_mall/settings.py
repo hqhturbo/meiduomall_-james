@@ -191,6 +191,10 @@ LOGGING = {
         },
     }
 }
+# 异步
+CELERY_BROKER_URL="redis://:123456@127.0.0.1/3"
+CELERY_RESULT_BACKEND="redis://:123456@127.0.0.1/4"
+
 AUTH_USER_MODEL = 'users.User'
 # CORS
 CORS_ORIGIN_WHITELIST = (
