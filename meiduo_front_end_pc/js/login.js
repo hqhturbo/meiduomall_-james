@@ -49,10 +49,12 @@ var app = new Vue({
                     password:this.password,
                     remember:this.remember,
                 }, {
-                    responseType:'json'
+                    responseType: 'json',
+                    withCredentials: true,
                 })
                     .then(asg => {
                         if (asg.data.code == 0) {
+                            console.log(asg.data)
                             location.href = '/index.html'
                         } else {
                             this.error_pwd_message = asg.data.errmsg;
@@ -64,7 +66,18 @@ var app = new Vue({
 
         //qq登录
         qq_login:function () {
-
+            var url = this.host + '/qq/authorization/'
+            axios.get(url, {
+                responseType: 'json',
+                withCredentials: true,
+            })
+                .then(asg => {
+                    if (asg.data.code==0){
+                        location.href = asg.data.login_url
+                    }else{
+                        alert('服务器错误')
+                    }
+                })
         },
     }
 })

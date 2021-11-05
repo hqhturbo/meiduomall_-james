@@ -5,7 +5,8 @@ from django.http import JsonResponse, HttpResponse
 from django.views import View
 from apps.users.models import User
 from django_redis import get_redis_connection #导入redis包
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
+from utils.view_extend import *
 # 1 导入系统logging
 import logging
 # 2 创建日志署
@@ -99,5 +100,17 @@ class LoginView(View):
         response = JsonResponse({'code':0,'errmsg':'ok'})
         u = json.dumps(user.nick_name)
         # print(u)
-        response.set_cookie('username',u)
+        response.set_cookie('username', u)
         return response
+
+# 退出
+class LogoutView(View):
+    def delete(self,request):
+        logout(request)
+        response = JsonResponse({'code':200,'errmsg':'退出成功'})
+        response.delete_cookie('username')
+        return response
+
+class UserInfoView(LoginRequiredMixin,View):
+    def get(self,request):
+        return JsonResponse({'code':200,'errmsg':'ok'})

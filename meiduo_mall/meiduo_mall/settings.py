@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.users.apps.UsersConfig',
-    'apps.verification'
+    'apps.verification',
+    'apps.oauth',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'meiduo_mall.middlewares.kuayu',
 ]
 
 ROOT_URLCONF = 'meiduo_mall.urls'
@@ -200,5 +202,16 @@ LOGGING = {
 }
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
+
 CELERY_BROKER_URL="redis://:12345@127.0.0.1/3"
 CELERY_RESULT_BACKEND="redis://:12345@127.0.0.1/4"
+
+# QQ登录参数
+# 我们申请的 客户端id
+QQ_CLIENT_ID ='101474184'
+# 我们申请的 客户端秘钥
+QQ_CLIENT_SECRET ='c6ce949e04e12ecc909ae6a8b09b637c'
+# 我们申请时添加的: 登录成功后回调的路径
+QQ_REDIRECT_URI ='http://www.meiduo.site:8080/oauth_callback.html'
+QQ_STATE ='meiduosite'
+
