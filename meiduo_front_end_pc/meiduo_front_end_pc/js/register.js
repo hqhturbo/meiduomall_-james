@@ -210,6 +210,7 @@ var app = new Vue({
 					password:this.password,
 					password2:this.password2,
 					mobile:this.mobile,
+					allow: this.allow,
 				},{
 					responseType:'json',
 					withCredentials:true,

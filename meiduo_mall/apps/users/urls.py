@@ -12,4 +12,8 @@ urlpatterns = [
 
     # 注册路由
     path('register', views.RegisterView.as_view()),
+    #登录路由
+    path('login/', LoginView.as_view()),
+
+    path('logout/', LogoutView.as_view())
 ]
