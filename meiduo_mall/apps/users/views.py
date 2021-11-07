@@ -1,12 +1,14 @@
 import json
 import logging
+import re
+from django.contrib.auth import authenticate, login, logout
 from libs.captcha.captcha import captcha # 导入验证码
 from django.shortcuts import *
 from django.http import JsonResponse
 from django_redis import get_redis_connection
 from django.views import View
 from apps.users.models import *
-logger = logging.getLogger('django_log')
+logger = logging.getLogger('django')
 # Create your views here.
 class UsernameCountView(View):
     def get(self,request,username):
@@ -25,19 +27,50 @@ class RegisterView(View):
         password = body_dict.get('password')
         password2 = body_dict.get('password2')
         mobile = body_dict.get('mobile')
-        if not all([username,password,password2,mobile]):
+        sms_code_client = body_dict.get('sms_code')
+        redis_conn = get_redis_connection('code')
+        sms_code_server = redis_conn.get(f'sms:{mobile}')
+        if not all([username,password,password2,mobile,sms_code_client]):
             return JsonResponse({'code':400,'errmsg':'参数不全'})
+        if not sms_code_server:
+            return JsonResponse({'code':400,'errmsg':'短信验证码失效'})
+        if sms_code_client != sms_code_server.decode():
+            return JsonResponse({'code':400,'errmsg':'短信验证码有误'})
         try:
             User.objects.create_user(username=username,password=password,mobile=mobile)
-            return JsonResponse({'code': 200, 'errmsg': '注册成功'})
         except Exception as e:
             logger.info(e)
             return JsonResponse({'code':400,'errmsg':'注册失败'})
-class ImageCountView(View):
-    def get(self,request,uuid):
-        if uuid is None:
-            return HttpResponse('没有获取到uuid')
-        txt, image = captcha.generate_captcha()
-        redis_conn = get_redis_connection()
-        redis_conn.setex(name='img:%s' % uuid,time=300,value=txt)
-        return HttpResponse(image, content_type='image/jpeg')
+        return JsonResponse({'code': 200, 'errmsg': '注册成功'})
+
+
+class LoginView(View):
+    def post(self,request):
+        dict = json.loads(request.body.decode()) #获取json方式提交的数据
+        username = dict.get('username')
+        password = dict.get('password')
+        remembered = dict.get('remembered')
+        if re.match('^1[3-9]\d{9}$',username):
+            User.USERNAME_FIELD = 'mobile'
+            user = authenticate(mobile=username, password=password)
+        else:
+            user = authenticate(username=username, password=password)
+        if user is None:
+            return JsonResponse({'code':400,'errmsg':'用户名或者密码错误'})
+        login(request,user)
+        if remembered != True:
+            request.session.set_expiry(0)
+        else:
+            request.session.set_expiry(None)
+        # 8返回json
+        response = JsonResponse({'code':0,'errmsg':'ok'})
+        u = json.dumps(user.nick_name) #用户名进行序列化
+        response.set_cookie("username",u) # 讲用户名写入的cookie
+        return response
+
+class LogoutView(View):
+    def delete(self,request):
+        logout(request) #退出⽤户，本质就是删除了sessionid
+        response = JsonResponse({"code":200,"errmsg":"退出成功"})
+        response.delete_cookie('username')#清除用户信息
+        return response

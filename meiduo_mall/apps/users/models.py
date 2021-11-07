@@ -8,7 +8,7 @@ class User(AbstractUser):
 
     """⾃定义⽤户模型类"""
     mobile = models.CharField(max_length=11, unique=True, verbose_name='⼿机号')
-
+    nick_name = models.CharField(max_length=20, default="未知用户")#昵称字段，默认为未知用户
     class Meta:
         db_table = 'tb_users'
         verbose_name = '⽤户'
