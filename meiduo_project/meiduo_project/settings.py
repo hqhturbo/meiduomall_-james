@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.users',
-    'apps.verification'
+    'apps.verification',
+    'apps.oauth'
 
 ]
 
@@ -194,6 +195,16 @@ LOGGING = {
         },
     }
 }
+# QQ登录参数
+# 我们申请的 客户端id
+QQ_CLIENT_ID = '101474184'
+# 我们申请的 客户端秘钥
+QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
+# 我们申请时添加的: 登录成功后回调的路径
+QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
+QQ_STATE = 'meiduosite'
+
+
 # CORS
 CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8080',

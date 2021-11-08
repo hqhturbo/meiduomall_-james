@@ -3420,3 +3420,341 @@ WARNING 2021-11-08 15:28:56,413 basehttp 154 "GET /accounts/login/?next=/info/ H
 WARNING 2021-11-08 15:28:57,995 log 228 Not Found: /accounts/login/
 WARNING 2021-11-08 15:28:57,995 basehttp 154 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3304
 INFO 2021-11-08 15:29:07,005 basehttp 154 "GET /info/ HTTP/1.1" 200 93
+INFO 2021-11-08 16:34:02,607 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\meiduo_project\settings.py changed, reloading.
+INFO 2021-11-08 16:34:03,302 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:39:24,575 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:40:47,993 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:41:17,544 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:44:43,612 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:45:35,405 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:47:00,985 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:54:22,531 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:56:42,571 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\meiduo_project\urls.py changed, reloading.
+INFO 2021-11-08 16:56:43,201 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:57:13,282 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:58:08,558 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 16:58:27,016 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:00:10,445 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:09:02,281 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\models.py changed, reloading.
+INFO 2021-11-08 17:09:02,858 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:10:11,324 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:10:12,048 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:12:44,043 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:12:44,731 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:17:53,592 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:18:06,593 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:18:53,045 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-08 17:19:53,038 log 228 Not Found: /accounts/login/
+WARNING 2021-11-08 17:19:53,039 basehttp 154 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3468
+INFO 2021-11-08 17:20:01,820 basehttp 154 "GET /qq/authorization/ HTTP/1.1" 200 210
+INFO 2021-11-08 17:21:52,807 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:22:00,779 basehttp 154 "GET /qq/authorization/ HTTP/1.1" 200 210
+INFO 2021-11-08 17:22:01,483 basehttp 154 "GET /qq/authorization/ HTTP/1.1" 200 210
+INFO 2021-11-08 17:27:59,773 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:28:00,386 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:28:46,025 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:28:46,605 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:28:50,346 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:28:50,927 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:33:58,924 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:34:15,804 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-08 17:34:26,711 log 228 Not Found: /
+WARNING 2021-11-08 17:34:26,711 basehttp 154 "GET / HTTP/1.1" 404 3555
+WARNING 2021-11-08 17:34:26,921 log 228 Not Found: /favicon.ico
+WARNING 2021-11-08 17:34:26,921 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3606
+INFO 2021-11-08 17:35:09,979 basehttp 154 "GET /oauth_callback HTTP/1.1" 301 0
+ERROR 2021-11-08 17:35:10,015 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 33, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:35:10,016 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 83806
+INFO 2021-11-08 17:35:50,377 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-08 17:35:52,146 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 33, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:35:52,147 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 83941
+ERROR 2021-11-08 17:35:53,590 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 33, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:35:53,591 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 83941
+ERROR 2021-11-08 17:35:54,325 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 33, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:35:54,326 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 83941
+ERROR 2021-11-08 17:35:54,843 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 33, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:35:54,843 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 83941
+INFO 2021-11-08 17:38:02,601 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:38:03,204 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:39:18,222 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-08 17:39:22,051 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 35, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:39:22,052 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+ERROR 2021-11-08 17:39:23,345 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 35, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:39:23,346 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+ERROR 2021-11-08 17:39:23,755 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 35, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:39:23,756 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+ERROR 2021-11-08 17:39:23,951 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 35, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:39:23,951 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+ERROR 2021-11-08 17:39:24,142 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 35, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:39:24,142 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+ERROR 2021-11-08 17:39:24,309 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 35, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:39:24,310 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+ERROR 2021-11-08 17:39:24,471 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 35, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:39:24,472 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+ERROR 2021-11-08 17:39:24,631 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 35, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:39:24,633 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+INFO 2021-11-08 17:40:05,741 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:40:06,317 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-08 17:40:06,631 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 30, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:40:06,632 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+INFO 2021-11-08 17:40:42,812 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-08 17:40:44,082 log 228 Not Found: /
+WARNING 2021-11-08 17:40:44,082 basehttp 154 "GET / HTTP/1.1" 404 3555
+ERROR 2021-11-08 17:40:49,586 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 30, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:40:49,587 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 83878
+INFO 2021-11-08 17:41:25,219 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-08 17:41:29,436 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-08 17:41:29,436 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 400 10
+INFO 2021-11-08 17:41:40,954 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-08 17:41:42,293 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 30, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:41:42,295 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+ERROR 2021-11-08 17:41:43,752 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 30, in get
+    return http.HttpResponseBadRequest('缺少code')
+AttributeError: module 'django.middleware.http' has no attribute 'HttpResponseBadRequest'
+ERROR 2021-11-08 17:41:43,753 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 500 84013
+INFO 2021-11-08 17:41:55,167 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-08 17:42:05,162 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-08 17:42:05,164 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 400 10
+INFO 2021-11-08 17:43:36,956 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:43:37,676 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:47:28,722 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:50:34,994 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:50:35,792 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:50:40,637 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-08 17:50:41,447 autoreload 578 Watching for file changes with StatReloader

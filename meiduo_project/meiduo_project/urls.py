@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.http import HttpResponse
 import logging
 from apps.users.views import *
-
+from apps.oauth.urls import *
 def log(request):
     logger = logging.getLogger('django')
     logger.info('用户登录了')
@@ -30,5 +30,6 @@ def log(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('apps.users.urls')),
-    path('',include('apps.verification.urls'))
+    path('',include('apps.verification.urls')),
+    path('',include('apps.oauth.urls'))
 ]
