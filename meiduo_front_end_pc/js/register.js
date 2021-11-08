@@ -14,22 +14,24 @@ var app = new Vue({
 		password2:'',
 		error_check_password:'',
 		error_password2_message:'',
-		error_image_code_message:'',
-		error_image_code:'',
 		image_code:'',
-		allow:'',
-		error_allow:'',
 		image_code_url:'',
+		error_image_code:'',
+		error_image_code_message:'',
+		allow:false,
+		error_allow:'',
 		sms_code:'',
-		error_sms_code:'',
 		error_sms_code_message:'',
-		check_sms_code:'',
 		sms_code_tip:'点击获取短信验证码',
+		error_sms_code:'',
+
+
 	},
-	mounted: function() {
+
+	mounted(){
 		this.generate_image_code()
 	},
-	// 用户名
+
 	methods: {
 		generateUUID: function() {
 			var d = new Date().getTime();
@@ -48,28 +50,9 @@ var app = new Vue({
 			// 生成一个编号 : 严格一点的使用uuid保证编号唯一， 不是很严谨的情况下，也可以使用时间戳
 			this.uuid = this.generateUUID();
 			// 设置页面中图片验证码img标签的src属性
-			this.image_code_url = this.host + "/image_codes/"+ this.uuid+'/';
+			this.image_code_url = this.host + "/image_codes/" + this.uuid + '/';
 		},
-
-		check_username: function() {
-			var that = this; //js闭包；js作用域范围问题
-			var username = that.username //获取到了用户在文本框中输入的信息
-			//http:127.0.0.1//
-			axios.get(that.host + '/usernames/' + username + '/count/').then(function(resp) {
-				console.log(resp)
-				that.error_name_message = resp.data.errmsg
-				if (resp.data.code == 200) {
-					// that.error_name=false
-					// that.statu_name='color:green'
-				} else {
-					that.error_name = true
-					// that.error_name=true
-					that.statu_name = 'color:red'
-				}
-			}).catch(function(err) {
-				console.log(err)
-			})
-		},
+		//发送短信验证码
 		send_sms_code: function() {
 			if (this.sending_flag == true) {
 				return;
@@ -84,6 +67,7 @@ var app = new Vue({
 				this.sending_flag = false;
 				return;
 			}
+
 			// 向后端接口发送请求，让后端发送短信验证码
 			var url = this.host + '/sms_codes/?mobile=' + this.mobile + '&image_code=' + this.image_code +
 				'&uuid=' + this.uuid;
@@ -91,9 +75,9 @@ var app = new Vue({
 					responseType: 'json'
 				})
 				.then(response => {
+					// console.error(response.data.code)
 					// 表示后端发送短信成功
 					if (response.data.code == 0) {
-
 						// 倒计时60秒，60秒后允许用户再次点击发送短信验证码的按钮
 						var num = 60;
 						// 设置一个计时器
@@ -114,9 +98,11 @@ var app = new Vue({
 					} else {
 						if (response.data.code == '400') {
 							//图片验证码错误
-							this.image_code_error = true;
+							error_image_code_message = response.data.errmsg
+							alert(error_image_code_message)
+							// this.image_code_error = true;
 						}
-						alert(response.data.errmsg)
+						alert(Response.data.errmsg)
 						this.sms_code_error = true;
 						this.generate_image_code();
 						this.sending_flag = false;
@@ -127,7 +113,6 @@ var app = new Vue({
 					this.sending_flag = false;
 				})
 		},
-
 		check_username: function(resp) {
 			if(!/^[A-Za-z0-9]{5,11}/.test(this.username)){
 				this.error_name_message = '用户名格式出错了'
@@ -147,7 +132,6 @@ var app = new Vue({
 				})
 			}
 		},
-		// 手机号
 		check_phone: function(msg) {
 			if (!/^1[345789]\d{9}$/.test(this.mobile)){
 				this.error_phone_message = '手机格式错误'
@@ -168,7 +152,6 @@ var app = new Vue({
 				})
 			}
 		},
-		// 密码重复
 		check_pwd: function () {
 			if (!/^\w{8,20}/.test(this.password)){
 				this.error_password_message = '请输入8-20位的英文字母、数字、下划线的密码'
@@ -186,7 +169,6 @@ var app = new Vue({
 		    	this.error_check_password = false
 			}
 		},
-
 		check_image_code:function () {
 			if (!this.image_code){
 			  this.error_image_code_message = '请输入图片验证码'
@@ -196,7 +178,10 @@ var app = new Vue({
 			  this.error_image_code = false
 			}
 		  },
-		// 注册
+		  check_sms_code: function(){
+			
+		},
+
 		on_submit: (function(){
 			if (this.error_name == false && this.error_password == false && this.error_check_password == false && this.error_phone == false){
 				axios.post(this.host + '/register/',{
@@ -204,22 +189,33 @@ var app = new Vue({
 					password:this.password,
 					password2:this.password2,
 					mobile:this.mobile,
+					sms_code:this.sms_code,
 					allow:this.allow},
 					{
 						responseType:'json',
 						withCredentials:true,
 					})
-					.then(responseType => {
-						if (responseType.data.code ==200){
-							alert(responseType.data.errmsg)
+					.then(response => {
+						if (response.data.code ==200){
+							location.href = 'index.html';
 						}
-						if (responseType.data.code == 400){
-							alert(responseType.data.errmsg)
+						if (response.data.code == 400){
+							alert(response.data.errmsg)
 						}
 					})
-
-
+					// .catch(error => {
+					// 	if (error.response.code == 400){
+					// 		if ('non_field_errors' in error){
+					// 			this.error_sms_code_message = error.response;
+					// 		}else{
+					// 			this.error_sms_code_message = '数据有误';
+					// 		}
+					// 		this.error_sms_code = true;
+					// 	}else {
+					// 		console.log(error);
+					// 	}
+					// })
 				}
-		}),
+		})
 	}
 })
