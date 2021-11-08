@@ -12,7 +12,7 @@ var app = new Vue({
     methods:{
         //账号
         check_username:function () {
-            if (!/^[A-Za-z0-9]{5,10}$/.test(this.username)) {
+            if (!/^[A-Za-z0-9]{5,20}$/.test(this.username)) {
                 this.error_username=true;
             }else{
                 this.error_username=false;
@@ -43,7 +43,7 @@ var app = new Vue({
             this.check_remember();
 
             //点击注册发送请求
-            if (this.error_username == false || this.error_pwd == false) {
+            if (this.error_username == false && this.error_pwd == false) {
                 axios.post(this.host + '/login/',{
                     username:this.username,
                     password:this.password,

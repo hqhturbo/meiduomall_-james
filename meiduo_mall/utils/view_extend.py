@@ -14,6 +14,5 @@ from django.http import JsonResponse
 
 class LoginrequiredJsonMixin(LoginRequiredMixin):
     '''禁止匿名访问'''
-
     def handle_no_permission(self):
-        return JsonResponse({'code':400,'errmsg':'匿名用户，请登录'})
+        return JsonResponse({'code':400,'errmsg':'匿名用户，请登录','next':self.request.path})

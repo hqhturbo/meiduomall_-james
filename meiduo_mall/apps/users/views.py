@@ -6,7 +6,7 @@ from django.views import View
 from apps.users.models import User
 from django_redis import get_redis_connection #导入redis包
 from django.contrib.auth import authenticate,login,logout
-from utils.view_extend import *
+from utils.view_extend import LoginrequiredJsonMixin
 # 1 导入系统logging
 import logging
 # 2 创建日志署
@@ -111,6 +111,6 @@ class LogoutView(View):
         response.delete_cookie('username')
         return response
 
-class UserInfoView(LoginRequiredMixin,View):
+class UserInfoView(LoginrequiredJsonMixin,View):
     def get(self,request):
         return JsonResponse({'code':200,'errmsg':'ok'})
