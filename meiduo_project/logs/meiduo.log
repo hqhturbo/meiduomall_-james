@@ -3359,3 +3359,64 @@ INFO 2021-11-08 00:55:09,772 basehttp 154 "GET /image_codes/39ced996-4d6c-470b-a
 INFO 2021-11-08 00:55:10,845 basehttp 154 "GET /sms_codes/?mobile=&image_code=&uuid=39ced996-4d6c-470b-a8ff-517ad80b7740 HTTP/1.1" 200 63
 WARNING 2021-11-08 00:56:16,434 log 228 Not Found: /
 WARNING 2021-11-08 00:56:16,434 basehttp 154 "GET / HTTP/1.1" 404 3083
+INFO 2021-11-08 14:13:36,338 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 14:13:41,701 basehttp 154 "GET /image_codes/aaf7f32d-abfb-4e67-8d23-dc28efbc4051/ HTTP/1.1" 200 3015
+INFO 2021-11-08 14:13:49,119 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-11-08 14:13:49,340 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2021-11-08 14:14:07,241 log 228 Not Found: /
+WARNING 2021-11-08 14:14:07,242 basehttp 154 "GET / HTTP/1.1" 404 3083
+WARNING 2021-11-08 14:14:07,362 log 228 Not Found: /favicon.ico
+WARNING 2021-11-08 14:14:07,362 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3134
+INFO 2021-11-08 14:14:19,799 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-11-08 14:14:20,009 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-11-08 14:14:22,950 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2021-11-08 14:14:22,976 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 51
+INFO 2021-11-08 14:19:58,041 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-11-08 14:20:00,027 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 51
+INFO 2021-11-08 14:20:47,603 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-11-08 14:20:49,199 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 51
+INFO 2021-11-08 14:23:25,000 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 14:23:33,876 basehttp 154 "GET /image_codes/815ce52d-b5a1-4671-a125-c1ac6181c947/ HTTP/1.1" 200 3062
+INFO 2021-11-08 14:23:34,836 basehttp 154 "GET /image_codes/2517200a-6b21-4c44-a8dc-f952c74ad30e/ HTTP/1.1" 200 2941
+INFO 2021-11-08 14:23:35,617 basehttp 154 "GET /image_codes/3ab748b6-a876-41bd-ba34-2f0036017917/ HTTP/1.1" 200 3172
+INFO 2021-11-08 14:41:38,692 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-08 14:41:39,273 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 14:44:48,640 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-08 14:46:13,497 log 228 Not Found: /
+WARNING 2021-11-08 14:46:13,497 basehttp 154 "GET / HTTP/1.1" 404 3077
+WARNING 2021-11-08 14:46:13,662 log 228 Not Found: /favicon.ico
+WARNING 2021-11-08 14:46:13,663 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3128
+WARNING 2021-11-08 14:46:24,539 log 228 Not Found: /info
+WARNING 2021-11-08 14:46:24,540 basehttp 154 "GET /info HTTP/1.1" 404 3107
+INFO 2021-11-08 14:47:01,336 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 14:47:14,653 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 14:48:05,728 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:10:34,623 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-08 15:10:35,347 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:11:27,128 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-08 15:11:27,760 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:11:43,393 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\urls.py changed, reloading.
+INFO 2021-11-08 15:11:43,996 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:12:10,045 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:12:11,735 basehttp 154 "GET /info HTTP/1.1" 301 0
+INFO 2021-11-08 15:12:11,745 basehttp 154 "GET /info/ HTTP/1.1" 302 0
+WARNING 2021-11-08 15:12:11,753 log 228 Not Found: /accounts/login/
+WARNING 2021-11-08 15:12:11,754 basehttp 154 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3304
+INFO 2021-11-08 15:12:21,096 basehttp 154 "GET /info/ HTTP/1.1" 302 0
+WARNING 2021-11-08 15:12:21,102 log 228 Not Found: /accounts/login/
+WARNING 2021-11-08 15:12:21,103 basehttp 154 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3304
+INFO 2021-11-08 15:13:41,392 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-08 15:13:41,993 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:13:51,399 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:20:30,062 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:21:50,936 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:22:46,588 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:24:05,590 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:25:17,484 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:26:11,540 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 15:27:20,941 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-08 15:28:56,412 log 228 Not Found: /accounts/login/
+WARNING 2021-11-08 15:28:56,413 basehttp 154 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3304
+WARNING 2021-11-08 15:28:57,995 log 228 Not Found: /accounts/login/
+WARNING 2021-11-08 15:28:57,995 basehttp 154 "GET /accounts/login/?next=/info/ HTTP/1.1" 404 3304
+INFO 2021-11-08 15:29:07,005 basehttp 154 "GET /info/ HTTP/1.1" 200 93

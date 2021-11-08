@@ -113,7 +113,7 @@ CACHES = {
         "LOCATION": "redis://127.0.0.1:6379",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            # 'PASSWORD': '123456',
+            'PASSWORD': '123456',
         }
     },
     "session": {  # session
@@ -121,7 +121,7 @@ CACHES = {
         "LOCATION": "redis://127.0.0.1:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            # "PASSWORD": '123456',
+            "PASSWORD": '123456',
         }
     },
     "code": {  # 验证码
@@ -129,7 +129,7 @@ CACHES = {
         "LOCATION": "redis://127.0.0.1:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            # "PASSWORD": '123456'
+            "PASSWORD": '123456'
         }
     }
 }

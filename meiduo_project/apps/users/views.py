@@ -10,6 +10,10 @@ import logging
 logger = logging.getLogger('django')
 
 
+
+
+
+
 class UsernameCountView(View):
     '''检查⽤户名重复'''
 
@@ -133,3 +137,18 @@ class LogoutView(View):
         response = JsonResponse({"code":200,"errmsg":"退出成功"})
         response.delete_cookie('username')
         return response
+
+
+from utils.view_extend import *
+class UserInfoView(LoginRequiredJsonMixin,View):
+    def get(self,request):
+        return JsonResponse({
+            'code':0,
+            'errmsg':'个人中心',
+            "info_data":{
+                "username":"itcast",
+                "mobile":"15592155630",
+                "email":"",
+                "email_active":'true'
+            }
+        })
