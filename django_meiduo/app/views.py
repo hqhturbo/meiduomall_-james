@@ -1,17 +1,19 @@
+import http
 import random
 from venv import logger
 
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate, logout
 from django.http import JsonResponse
 from django.views import View
 from django_redis import get_redis_connection
-
+from django.contrib.auth.mixins import LoginRequiredMixin, AccessMixin
 from app.models import User
 import json
 import re
 
 # Create your views here.
 from libs.yuntongxun.sms import CCP
+from utils.view_extend import LoginRequiredJsonMixin
 
 
 class UsernameCountView(View):
@@ -25,11 +27,13 @@ class MobileCountView(View):
     def get(self, request, mobile):
         count = User.objects.filter(mobile=mobile).count()
         return JsonResponse({'code': 200, 'errmsg': 'ok', 'count': count})
+
 class PasswordCountView(View):
 
     def get(self, request, password):
         count = User.objects.filter(password=password).count()
         return JsonResponse({'code': 200, 'errmsg': 'ok', 'count': count})
+
 class RegisterView(View):
     """⽤户注册"""
     def post(self, request):
@@ -57,12 +61,9 @@ class RegisterView(View):
 
 
 class SMSCodeView(View):
-
-
     """短信验证码"""
 
-
-    def get(self, reqeust):
+    def get(self, reqeust,):
         mobile = reqeust.GET.get("mobile")
         image_code_client = reqeust.GET.get('image_code')  # 获取验证码
         uuid = reqeust.GET.get('uuid')  # 获取uuid
@@ -103,6 +104,87 @@ class SMSCodeView(View):
         # 写⼊send_flag
         redis_conn.setex(f'send_flag:{mobile}', 60, 1)
         # 6、发送短信验证码
+        print('已发送')
         CCP().send_template_sms(mobile, [sms_code, 5], 1)
+        # from celery_tasks.sms.tskes import send_sms_code
+        # send_sms_code.delay(mobile, sms_code)
+        print('bbb')
         # 7、响应结果
         return JsonResponse({'code': 200, 'errmsg': '发送短信成功'})
+
+
+class LoginView(View):
+
+
+    """⽤户名登录"""
+
+
+    def post(self, request):
+
+
+# 1.接收参数
+        dict = json.loads(request.body.decode())  # 获取json⽅式提交的数据
+        username = dict.get('username')
+        password = dict.get('password')
+        remembered = dict.get('remembered')
+# 2.校验(整体 + 单个)
+        if not all([username, password]):
+            return JsonResponse({'code': 400, 'errmsg': '缺少必传参数'})
+        # 3.验证是否能够登录
+
+
+        import re
+
+        if re.match('^1[3-9]\d{9}$', username):
+        # ⼿机号
+            User.USERNAME_FIELD = 'mobile'
+            user = authenticate(mobile=username, password=password)
+        else:
+            # account 是⽤户名
+            # 根据⽤户名从数据库获取 user 对象返回.
+            User.USERNAME_FIELD = 'username'
+            user = authenticate(username=username, password=password)
+        # 判断是否为空,如果为空,返回
+        if user is None:
+            return JsonResponse({'code': 400, 'errmsg': '⽤户名或者密码错误'})
+        # 4.状态保持 （⽣成⽤户回话session）
+        login(request, user)
+        # 5.判断是否记住⽤户
+        if remembered != True:
+
+        # 7.如果没有记住: 关闭⽴刻失效
+            request.session.set_expiry(0)
+        else:
+        # 6.如果记住: 设置为两周有效
+            request.session.set_expiry(None)
+        # 8.返回json
+        resp = JsonResponse({'code': 0, 'errmsg': 'ok'})
+        u = json.dumps(user.nick_name)
+        resp.set_cookie('username',u)
+        return resp
+
+
+class LogoutView(View):
+    def delete(self, request):
+        logout(request)  # 退出⽤户，本质就是删除了sessionid
+        response = JsonResponse({"code": 200, "errmsg": "退出成功"})
+        # 为什么这⾥需要删除该cookie，因为前端是需要根据这个cookie的值来判断和显示登录⽤户信息
+        response.delete_cookie('username')  # 清除⽤户信息
+        return response
+
+
+
+class UserInfoView(LoginRequiredJsonMixin, View):
+    def get(self, request):
+        return JsonResponse({
+
+            'code': 0,
+            'errmsg': '个人中心',
+            "info_data": {
+                "username": "itcast",
+                "mobile": "18792380761",
+                "email":"",
+                "email_active":'true'
+            }
+
+        })

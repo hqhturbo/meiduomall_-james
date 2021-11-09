@@ -13,3 +13,5 @@ class ImageCodeView(View):
         redis_conn.setex('img_%s' % uuid, 300, text)
         return HttpResponse(image, content_type='image/jpeg')
 
+
+

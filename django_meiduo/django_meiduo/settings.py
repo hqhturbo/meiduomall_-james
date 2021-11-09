@@ -204,4 +204,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://www.meiduo.site:8000'
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
+CELERY_BROKER_URL="redis://:123456@127.0.0.1/3"
+CELERY_RESULT_BACKEND="redis://:123456@127.0.0.1/4"
+
 
