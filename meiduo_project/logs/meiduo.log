@@ -3758,3 +3758,2419 @@ INFO 2021-11-08 17:50:34,994 autoreload 203 D:\book\源码\meiduomall_-james\meidu
 INFO 2021-11-08 17:50:35,792 autoreload 578 Watching for file changes with StatReloader
 INFO 2021-11-08 17:50:40,637 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
 INFO 2021-11-08 17:50:41,447 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-08 17:59:48,282 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-11-08 17:59:48,516 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-11-08 18:00:01,401 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-11-08 18:00:01,609 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-11-08 18:00:49,088 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-11-08 18:00:49,290 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2021-11-08 18:01:07,325 log 228 Not Found: /
+WARNING 2021-11-08 18:01:07,326 basehttp 154 "GET / HTTP/1.1" 404 3561
+WARNING 2021-11-08 18:01:07,441 log 228 Not Found: /favicon.ico
+WARNING 2021-11-08 18:01:07,442 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3612
+INFO 2021-11-08 18:01:18,080 basehttp 154 "GET /qq/authorization/ HTTP/1.1" 200 210
+INFO 2021-11-09 14:12:55,787 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 14:18:36,692 basehttp 154 "GET /image_codes/d0341f98-4709-451a-bf57-5e8af542b986/ HTTP/1.1" 200 3059
+INFO 2021-11-09 14:27:50,852 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 14:27:52,418 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 14:28:23,434 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 14:29:29,481 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-09 14:31:49,974 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.oauth.views.QQOauthView didn't return an HttpResponse object. It returned None instead.
+ERROR 2021-11-09 14:31:49,976 basehttp 154 "GET /oauth_callback/?code=9639B78D2815DE19624BEEE53985CAE8 HTTP/1.1" 500 63033
+ERROR 2021-11-09 14:31:54,791 views 43 access_token获取失败
+ERROR 2021-11-09 14:31:54,820 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:31:54,821 basehttp 154 "GET /oauth_callback/?code=9639B78D2815DE19624BEEE53985CAE8 HTTP/1.1" 500 91840
+ERROR 2021-11-09 14:31:54,989 views 43 access_token获取失败
+ERROR 2021-11-09 14:31:55,026 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:31:55,027 basehttp 154 "GET /oauth_callback/?code=9639B78D2815DE19624BEEE53985CAE8 HTTP/1.1" 500 91840
+ERROR 2021-11-09 14:31:55,028 basehttp 154 "GET /oauth_callback/?code=9639B78D2815DE19624BEEE53985CAE8 HTTP/1.1" 500 59
+ERROR 2021-11-09 14:37:42,759 views 43 access_token获取失败
+ERROR 2021-11-09 14:37:42,786 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:37:42,787 basehttp 154 "GET /oauth_callback/?code=9639B78D2815DE19624BEEE53985CAE8 HTTP/1.1" 500 91840
+ERROR 2021-11-09 14:37:48,606 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.oauth.views.QQOauthView didn't return an HttpResponse object. It returned None instead.
+ERROR 2021-11-09 14:37:48,608 basehttp 154 "GET /oauth_callback/?code=84808DC16F8BDE04EC974EAFDBFC1A89 HTTP/1.1" 500 63033
+ERROR 2021-11-09 14:37:48,609 basehttp 154 "GET /oauth_callback/?code=84808DC16F8BDE04EC974EAFDBFC1A89 HTTP/1.1" 500 59
+ERROR 2021-11-09 14:37:49,076 views 43 access_token获取失败
+ERROR 2021-11-09 14:37:49,109 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:37:49,110 basehttp 154 "GET /oauth_callback/?code=84808DC16F8BDE04EC974EAFDBFC1A89 HTTP/1.1" 500 91840
+ERROR 2021-11-09 14:37:50,478 views 43 access_token获取失败
+ERROR 2021-11-09 14:37:50,508 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:37:50,509 basehttp 154 "GET /oauth_callback/?code=84808DC16F8BDE04EC974EAFDBFC1A89 HTTP/1.1" 500 91840
+INFO 2021-11-09 14:39:27,228 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 14:39:27,850 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 14:40:05,532 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 14:40:10,133 views 43 access_token获取失败
+ERROR 2021-11-09 14:40:10,168 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:40:10,170 basehttp 154 "GET /oauth_callback/?code=84808DC16F8BDE04EC974EAFDBFC1A89 HTTP/1.1" 500 91832
+ERROR 2021-11-09 14:40:17,160 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.oauth.views.QQOauthView didn't return an HttpResponse object. It returned None instead.
+ERROR 2021-11-09 14:40:17,161 basehttp 154 "GET /oauth_callback/?code=DFFC5E493DE77CD2E1746CEDE1C3E475 HTTP/1.1" 500 63033
+INFO 2021-11-09 14:40:33,747 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 14:40:34,334 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 14:45:26,835 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 14:45:27,406 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 14:45:44,131 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 14:45:45,827 views 43 access_token获取失败
+ERROR 2021-11-09 14:45:45,859 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:45:45,861 basehttp 154 "GET /oauth_callback/?code=DFFC5E493DE77CD2E1746CEDE1C3E475 HTTP/1.1" 500 91943
+ERROR 2021-11-09 14:45:46,552 views 43 access_token获取失败
+ERROR 2021-11-09 14:45:46,589 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:45:46,590 basehttp 154 "GET /oauth_callback/?code=DFFC5E493DE77CD2E1746CEDE1C3E475 HTTP/1.1" 500 91943
+INFO 2021-11-09 14:47:39,742 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 14:47:40,289 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 14:47:54,376 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 14:48:31,150 basehttp 154 "GET /oauth_callback/?code=3AAC1B26281F2565CC8FF05734979C36 HTTP/1.1" 200 65
+INFO 2021-11-09 14:48:31,191 basehttp 154 "GET /image_codes/38e82067-8a39-43e2-980c-3c7231e6f3f6/ HTTP/1.1" 200 2934
+ERROR 2021-11-09 14:48:33,259 views 43 access_token获取失败
+ERROR 2021-11-09 14:48:33,288 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:48:33,289 basehttp 154 "GET /oauth_callback/?code=3AAC1B26281F2565CC8FF05734979C36 HTTP/1.1" 500 91947
+INFO 2021-11-09 14:48:40,088 basehttp 154 "GET /oauth_callback/?code=F79629BDBD7AEEA781DF27AF0779E26A HTTP/1.1" 200 65
+INFO 2021-11-09 14:48:40,110 basehttp 154 "GET /image_codes/e5809220-df0a-444a-8048-2af523e56a7e/ HTTP/1.1" 200 3228
+ERROR 2021-11-09 14:48:41,806 views 43 access_token获取失败
+ERROR 2021-11-09 14:48:41,831 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:48:41,832 basehttp 154 "GET /oauth_callback/?code=F79629BDBD7AEEA781DF27AF0779E26A HTTP/1.1" 500 91947
+ERROR 2021-11-09 14:48:43,872 views 43 access_token获取失败
+ERROR 2021-11-09 14:48:43,899 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:48:43,900 basehttp 154 "GET /oauth_callback/?code=F79629BDBD7AEEA781DF27AF0779E26A HTTP/1.1" 500 91947
+ERROR 2021-11-09 14:49:36,276 views 43 access_token获取失败
+ERROR 2021-11-09 14:49:36,301 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 14:49:36,302 basehttp 154 "GET /oauth_callback/?code=F79629BDBD7AEEA781DF27AF0779E26A HTTP/1.1" 500 91947
+INFO 2021-11-09 14:50:28,889 basehttp 154 "GET /oauth_callback/?code=226D5401340C70762289DB2BCE633F90 HTTP/1.1" 200 65
+INFO 2021-11-09 14:50:28,912 basehttp 154 "GET /image_codes/e3b8846c-d2a7-47ef-894e-a9f6502b0518/ HTTP/1.1" 200 3248
+INFO 2021-11-09 14:56:48,685 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 14:58:23,066 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 14:59:23,860 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 14:59:58,884 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:00:06,621 basehttp 154 "GET /oauth_callback/?code=C7EE318F9E097D9B29562E4795702174 HTTP/1.1" 200 65
+INFO 2021-11-09 15:00:06,651 basehttp 154 "GET /image_codes/e086a248-d608-4951-8704-60d9fa0d39be/ HTTP/1.1" 200 3457
+ERROR 2021-11-09 15:00:08,501 views 43 access_token获取失败
+ERROR 2021-11-09 15:00:08,529 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:00:08,531 basehttp 154 "GET /oauth_callback/?code=C7EE318F9E097D9B29562E4795702174 HTTP/1.1" 500 91947
+INFO 2021-11-09 15:00:13,998 basehttp 154 "GET /oauth_callback/?code=C6762C521F34B6FDCAF092ABE5388031 HTTP/1.1" 200 65
+INFO 2021-11-09 15:00:14,032 basehttp 154 "GET /image_codes/0ae0bb3f-4ac0-4284-8a40-74ce3ee62755/ HTTP/1.1" 200 3335
+ERROR 2021-11-09 15:00:26,711 views 43 access_token获取失败
+ERROR 2021-11-09 15:00:26,737 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:00:26,738 basehttp 154 "GET /oauth_callback/?code=C6762C521F34B6FDCAF092ABE5388031 HTTP/1.1" 500 91947
+INFO 2021-11-09 15:00:37,654 basehttp 154 "GET /oauth_callback/?code=A1136355787194DEE83AF38EA1656643 HTTP/1.1" 200 65
+INFO 2021-11-09 15:00:37,673 basehttp 154 "GET /image_codes/439e1c46-b3b1-4819-b3c2-25ca442eba78/ HTTP/1.1" 200 3170
+WARNING 2021-11-09 15:02:11,108 log 228 Not Found: /sms_codes/15592155630/
+WARNING 2021-11-09 15:02:11,109 basehttp 154 "GET /sms_codes/15592155630/?image_code=kbfa&uuid=439e1c46-b3b1-4819-b3c2-25ca442eba78 HTTP/1.1" 404 3707
+ERROR 2021-11-09 15:02:39,465 views 43 access_token获取失败
+ERROR 2021-11-09 15:02:39,496 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:02:39,497 basehttp 154 "GET /oauth_callback/?code=A1136355787194DEE83AF38EA1656643 HTTP/1.1" 500 91947
+ERROR 2021-11-09 15:02:41,573 views 43 access_token获取失败
+ERROR 2021-11-09 15:02:41,610 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:02:41,611 basehttp 154 "GET /oauth_callback/?code=A1136355787194DEE83AF38EA1656643 HTTP/1.1" 500 91947
+ERROR 2021-11-09 15:02:44,093 views 43 access_token获取失败
+ERROR 2021-11-09 15:02:44,126 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:02:44,127 basehttp 154 "GET /oauth_callback/?code=A1136355787194DEE83AF38EA1656643 HTTP/1.1" 500 91947
+ERROR 2021-11-09 15:03:11,338 views 43 access_token获取失败
+ERROR 2021-11-09 15:03:11,373 views 43 access_token获取失败
+ERROR 2021-11-09 15:03:11,375 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:03:11,382 basehttp 154 "GET /oauth_callback/?code=A1136355787194DEE83AF38EA1656643 HTTP/1.1" 500 91947
+ERROR 2021-11-09 15:03:11,383 basehttp 154 "GET /oauth_callback/?code=A1136355787194DEE83AF38EA1656643 HTTP/1.1" 500 59
+ERROR 2021-11-09 15:03:11,430 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:03:11,432 basehttp 154 "GET /oauth_callback/?code=A1136355787194DEE83AF38EA1656643 HTTP/1.1" 500 91947
+INFO 2021-11-09 15:03:14,756 basehttp 154 "GET /oauth_callback/?code=707F46C7A65A02B1FB928C7A71B9A9ED HTTP/1.1" 200 65
+ERROR 2021-11-09 15:03:16,763 views 43 access_token获取失败
+ERROR 2021-11-09 15:03:16,798 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:03:16,799 basehttp 154 "GET /oauth_callback/?code=707F46C7A65A02B1FB928C7A71B9A9ED HTTP/1.1" 500 91947
+INFO 2021-11-09 15:03:20,739 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:03:21,817 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:03:23,456 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:03:31,185 basehttp 154 "GET /oauth_callback/?code=5E7E349B82A7BD7BCC0C5402E76DE796 HTTP/1.1" 200 65
+ERROR 2021-11-09 15:03:39,396 views 43 access_token获取失败
+ERROR 2021-11-09 15:03:39,437 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:03:39,439 basehttp 154 "GET /oauth_callback/?code=5E7E349B82A7BD7BCC0C5402E76DE796 HTTP/1.1" 500 91947
+INFO 2021-11-09 15:03:44,583 basehttp 154 "GET /oauth_callback/?code=43275802CA690CFF62FB1F01B1417881 HTTP/1.1" 200 65
+INFO 2021-11-09 15:03:44,609 basehttp 154 "GET /image_codes/e85e6f30-7cd8-4f7d-b2ec-e300af8b400d/ HTTP/1.1" 200 3349
+INFO 2021-11-09 15:03:51,098 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:03:54,561 basehttp 154 "GET /oauth_callback/?code=4989B409E7FC284862711474D992C3D9 HTTP/1.1" 200 65
+INFO 2021-11-09 15:03:54,583 basehttp 154 "GET /image_codes/ec7362c9-a380-4fbd-8833-25908bfa002d/ HTTP/1.1" 200 3235
+ERROR 2021-11-09 15:03:56,399 views 43 access_token获取失败
+ERROR 2021-11-09 15:03:56,428 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 39, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 44, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:03:56,429 basehttp 154 "GET /oauth_callback/?code=4989B409E7FC284862711474D992C3D9 HTTP/1.1" 500 91947
+INFO 2021-11-09 15:04:29,506 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 15:04:30,071 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 15:04:51,291 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 15:04:51,928 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 15:04:58,967 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 15:04:59,527 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 15:05:06,489 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 15:05:07,197 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 15:13:07,821 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 15:15:11,270 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 15:15:14,786 views 46 access_token获取失败
+ERROR 2021-11-09 15:15:14,820 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:15:14,821 basehttp 154 "GET /oauth_callback/?code=4989B409E7FC284862711474D992C3D9 HTTP/1.1" 500 91891
+INFO 2021-11-09 15:15:21,245 basehttp 154 "GET /oauth_callback/?code=F91DA9C21F7B554FB1CAD0C2739E003D HTTP/1.1" 200 65
+INFO 2021-11-09 15:15:21,289 basehttp 154 "GET /image_codes/b71e287a-7ae5-4892-84b3-dcb5a9314b93/ HTTP/1.1" 200 3053
+WARNING 2021-11-09 15:17:26,437 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-09 15:17:26,437 basehttp 154 "GET /oauth_callback/?access_token=F91DA9C21F7B554FB1CAD0C2739E003D HTTP/1.1" 400 10
+WARNING 2021-11-09 15:17:30,360 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-09 15:17:30,361 basehttp 154 "GET /oauth_callback/?access_token=E1C1F0889ECCA0046B16713707AE53C5 HTTP/1.1" 400 10
+WARNING 2021-11-09 15:17:37,130 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-09 15:17:37,131 basehttp 154 "GET /oauth_callback/?access_token=E1C1F0889ECCA0046B16713707AE53C5 HTTP/1.1" 400 10
+INFO 2021-11-09 15:17:55,643 basehttp 154 "GET /oauth_callback/?code=E1C1F0889ECCA0046B16713707AE53C5 HTTP/1.1" 200 65
+INFO 2021-11-09 15:17:55,669 basehttp 154 "GET /image_codes/3695ba1a-648e-460a-998a-5cc68ade6f45/ HTTP/1.1" 200 3586
+INFO 2021-11-09 15:17:59,671 basehttp 154 "GET /oauth_callback/?code=C0C1650554D39562468B0E02C2DA8FE4 HTTP/1.1" 200 65
+INFO 2021-11-09 15:17:59,696 basehttp 154 "GET /image_codes/4d316b63-95ab-4490-9388-29e3dc78b870/ HTTP/1.1" 200 3188
+ERROR 2021-11-09 15:18:00,461 views 46 access_token获取失败
+ERROR 2021-11-09 15:18:00,490 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:18:00,491 basehttp 154 "GET /oauth_callback/?code=C0C1650554D39562468B0E02C2DA8FE4 HTTP/1.1" 500 91891
+INFO 2021-11-09 15:18:06,120 basehttp 154 "GET /oauth_callback/?code=92159648911C13A727ACC090607693FF HTTP/1.1" 200 65
+INFO 2021-11-09 15:18:06,141 basehttp 154 "GET /image_codes/fc5e81ff-9d24-4617-82b1-1bfe1ef2aaba/ HTTP/1.1" 200 3171
+ERROR 2021-11-09 15:18:06,718 views 46 access_token获取失败
+ERROR 2021-11-09 15:18:06,744 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:18:06,745 basehttp 154 "GET /oauth_callback/?code=92159648911C13A727ACC090607693FF HTTP/1.1" 500 91891
+INFO 2021-11-09 15:18:57,632 basehttp 154 "GET /oauth_callback/?code=DBF021404D31AD443D5B3E5A593705AE HTTP/1.1" 200 65
+INFO 2021-11-09 15:18:57,655 basehttp 154 "GET /image_codes/89064164-d081-4912-92a4-407af6d03106/ HTTP/1.1" 200 3441
+INFO 2021-11-09 15:19:54,938 basehttp 154 "GET /oauth_callback/?code=B61F2E1AA5A6946D79EC07A0E31FCE13 HTTP/1.1" 200 65
+INFO 2021-11-09 15:19:54,961 basehttp 154 "GET /image_codes/a3f93c80-ca3f-4020-baef-bb0ac2f93234/ HTTP/1.1" 200 3205
+ERROR 2021-11-09 15:20:16,108 views 46 access_token获取失败
+ERROR 2021-11-09 15:20:16,136 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:20:16,137 basehttp 154 "GET /oauth_callback/?code=69FCAE7C647702E673D11592C45FB2BF HTTP/1.1" 500 91891
+ERROR 2021-11-09 15:20:18,493 views 46 access_token获取失败
+ERROR 2021-11-09 15:20:18,520 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:20:18,521 basehttp 154 "GET /oauth_callback/?code=69FCAE7C647702E673D11592C45FB2BF HTTP/1.1" 500 91891
+ERROR 2021-11-09 15:20:19,586 views 46 access_token获取失败
+ERROR 2021-11-09 15:20:19,614 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:20:19,615 basehttp 154 "GET /oauth_callback/?code=69FCAE7C647702E673D11592C45FB2BF HTTP/1.1" 500 91891
+ERROR 2021-11-09 15:20:21,185 views 46 access_token获取失败
+ERROR 2021-11-09 15:20:21,212 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:20:21,213 basehttp 154 "GET /oauth_callback/?code=B61F2E1AA5A6946D79EC07A0E31FCE13 HTTP/1.1" 500 91891
+INFO 2021-11-09 15:20:24,982 basehttp 154 "GET /oauth_callback/?code=30B556AE7CFD70415E6857A2D32C47A8 HTTP/1.1" 200 65
+INFO 2021-11-09 15:20:25,007 basehttp 154 "GET /image_codes/d2aed191-e06c-4892-89b0-a67767dfa567/ HTTP/1.1" 200 3020
+ERROR 2021-11-09 15:21:20,161 views 46 access_token获取失败
+ERROR 2021-11-09 15:21:20,188 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:21:20,189 basehttp 154 "GET /oauth_callback/?code=30B556AE7CFD70415E6857A2D32C47A8 HTTP/1.1" 500 91891
+INFO 2021-11-09 15:21:26,826 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:21:30,845 basehttp 154 "GET /oauth_callback/?code=77A5BA3C3FEF080653241E6CC61E4968 HTTP/1.1" 200 65
+INFO 2021-11-09 15:21:30,868 basehttp 154 "GET /image_codes/945503da-38f9-40c9-a255-b70e74b17c78/ HTTP/1.1" 200 3324
+ERROR 2021-11-09 15:22:47,480 views 46 access_token获取失败
+ERROR 2021-11-09 15:22:47,515 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:22:47,516 basehttp 154 "GET /oauth_callback/?code=77A5BA3C3FEF080653241E6CC61E4968 HTTP/1.1" 500 91891
+INFO 2021-11-09 15:22:51,378 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:22:53,679 basehttp 154 "GET /oauth_callback/?code=85E9D25969F24C07CF6A75B10CA89FBC HTTP/1.1" 200 65
+INFO 2021-11-09 15:22:53,707 basehttp 154 "GET /image_codes/d2b0b69b-da5f-4eee-9d1e-1d2fa28fbba0/ HTTP/1.1" 200 2980
+ERROR 2021-11-09 15:22:58,226 views 46 access_token获取失败
+ERROR 2021-11-09 15:22:58,254 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:22:58,255 basehttp 154 "GET /oauth_callback/?code=85E9D25969F24C07CF6A75B10CA89FBC HTTP/1.1" 500 91891
+ERROR 2021-11-09 15:24:36,091 views 46 access_token获取失败
+ERROR 2021-11-09 15:24:36,120 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:24:36,121 basehttp 154 "GET /oauth_callback/?code=85E9D25969F24C07CF6A75B10CA89FBC HTTP/1.1" 500 91891
+INFO 2021-11-09 15:24:39,161 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:24:41,342 basehttp 154 "GET /oauth_callback/?code=B313559EC0F0E188B6CC1E3CB12FE591 HTTP/1.1" 200 65
+INFO 2021-11-09 15:24:41,360 basehttp 154 "GET /image_codes/da21f986-cd1e-49d9-a369-0b45a09c9e26/ HTTP/1.1" 200 2792
+INFO 2021-11-09 15:25:38,248 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 15:25:38,827 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 15:25:39,751 views 46 access_token获取失败
+ERROR 2021-11-09 15:25:39,791 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:25:39,793 basehttp 154 "GET /oauth_callback/?code=B313559EC0F0E188B6CC1E3CB12FE591 HTTP/1.1" 500 91846
+INFO 2021-11-09 15:25:48,909 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 15:25:50,423 views 46 access_token获取失败
+ERROR 2021-11-09 15:25:50,460 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:25:50,462 basehttp 154 "GET /oauth_callback/?code=B313559EC0F0E188B6CC1E3CB12FE591 HTTP/1.1" 500 91846
+INFO 2021-11-09 15:25:55,611 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 212
+INFO 2021-11-09 15:25:57,769 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 212
+INFO 2021-11-09 15:25:58,177 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 212
+INFO 2021-11-09 15:25:58,361 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 212
+INFO 2021-11-09 15:25:58,600 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 212
+INFO 2021-11-09 15:25:58,801 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 212
+INFO 2021-11-09 15:25:58,960 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 212
+INFO 2021-11-09 15:26:07,734 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 15:26:10,486 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:26:27,043 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:26:29,636 basehttp 154 "GET /oauth_callback/?code=D6D4F9639D9B35FF3944076A7D2661FF HTTP/1.1" 200 65
+INFO 2021-11-09 15:26:29,666 basehttp 154 "GET /image_codes/589449f3-5fd2-45d4-9c1d-7d52b64fb2a1/ HTTP/1.1" 200 3405
+INFO 2021-11-09 15:27:51,951 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 15:27:53,657 views 46 access_token获取失败
+ERROR 2021-11-09 15:27:53,702 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:27:53,704 basehttp 154 "GET /oauth_callback/?code=D6D4F9639D9B35FF3944076A7D2661FF HTTP/1.1" 500 91696
+ERROR 2021-11-09 15:27:54,250 views 46 access_token获取失败
+ERROR 2021-11-09 15:27:54,290 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:27:54,291 basehttp 154 "GET /oauth_callback/?code=D6D4F9639D9B35FF3944076A7D2661FF HTTP/1.1" 500 91696
+ERROR 2021-11-09 15:27:57,711 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view apps.oauth.views.QQOauthView didn't return an HttpResponse object. It returned None instead.
+ERROR 2021-11-09 15:27:57,712 basehttp 154 "GET /oauth_callback/?code=58B25771352AFD30D6A3D1CE551203D0 HTTP/1.1" 500 63033
+INFO 2021-11-09 15:28:17,894 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 15:28:18,479 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 15:28:55,795 views 46 access_token获取失败
+ERROR 2021-11-09 15:28:55,824 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:28:55,826 basehttp 154 "GET /oauth_callback/?code=58B25771352AFD30D6A3D1CE551203D0 HTTP/1.1" 500 91846
+INFO 2021-11-09 15:28:59,178 basehttp 154 "GET /oauth_callback/?code=639FCFC914F74EB6AABEB95991724413 HTTP/1.1" 200 65
+INFO 2021-11-09 15:28:59,208 basehttp 154 "GET /image_codes/19f2f590-4066-448c-9a8f-ef2d38c088e3/ HTTP/1.1" 200 3197
+INFO 2021-11-09 15:29:02,442 basehttp 154 "GET /image_codes/7040d6a5-9ab4-48a9-944a-5284b4b7d275/ HTTP/1.1" 200 3323
+INFO 2021-11-09 15:29:02,940 basehttp 154 "GET /image_codes/01494ce9-dc4e-41e3-9fc8-a75eb1e22d44/ HTTP/1.1" 200 3138
+INFO 2021-11-09 15:29:03,106 basehttp 154 "GET /image_codes/dee43d3a-99b0-4d91-b97c-e9eb68c1b4c5/ HTTP/1.1" 200 3167
+INFO 2021-11-09 15:29:03,275 basehttp 154 "GET /image_codes/03be9a50-e860-448c-b37c-afbff5b9871a/ HTTP/1.1" 200 3197
+INFO 2021-11-09 15:29:03,426 basehttp 154 "GET /image_codes/aee02c16-a7ce-4ee7-8af2-10f5354ed108/ HTTP/1.1" 200 3085
+INFO 2021-11-09 15:29:03,587 basehttp 154 "GET /image_codes/560638a7-aaec-4435-a936-d80d36533026/ HTTP/1.1" 200 2745
+ERROR 2021-11-09 15:29:41,373 views 46 access_token获取失败
+ERROR 2021-11-09 15:29:41,403 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:29:41,404 basehttp 154 "GET /oauth_callback/?code=639FCFC914F74EB6AABEB95991724413 HTTP/1.1" 500 91846
+INFO 2021-11-09 15:29:46,502 basehttp 154 "GET /oauth_callback/?code=08E9B567BCE52117C2833C4FB0F4A0C7 HTTP/1.1" 200 65
+INFO 2021-11-09 15:29:46,532 basehttp 154 "GET /image_codes/3c796248-7f79-413a-8ab1-526f7f816dfc/ HTTP/1.1" 200 3017
+ERROR 2021-11-09 15:46:44,508 views 46 access_token获取失败
+ERROR 2021-11-09 15:46:44,534 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:46:44,535 basehttp 154 "GET /oauth_callback/?code=08E9B567BCE52117C2833C4FB0F4A0C7 HTTP/1.1" 500 91846
+INFO 2021-11-09 15:46:53,454 basehttp 154 "GET /oauth_callback/?code=B8E0FA83330AF7DC75DBC6452D79593E HTTP/1.1" 200 65
+INFO 2021-11-09 15:46:53,480 basehttp 154 "GET /image_codes/f4fc288d-489c-4a85-9403-98ab6f965275/ HTTP/1.1" 200 3013
+INFO 2021-11-09 15:59:38,141 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 15:59:42,427 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 15:59:46,153 basehttp 154 "GET /oauth_callback/?code=9822E68F631E7F16C6CC2DE419EC32BB HTTP/1.1" 200 65
+INFO 2021-11-09 15:59:46,205 basehttp 154 "GET /image_codes/e4f7d3da-0519-4435-a131-19c38e470540/ HTTP/1.1" 200 3333
+ERROR 2021-11-09 15:59:47,091 views 46 access_token获取失败
+ERROR 2021-11-09 15:59:47,137 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 42, in get
+    access_token = oauth.get_access_token(code)
+  File "D:\book\源码\venv\lib\site-packages\QQLoginTool\QQtool.py", line 63, in get_access_token
+    raise Exception('access_token获取失败')
+Exception: access_token获取失败
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 47, in get
+    http.JsonResponse({'code': 400, 'errmsg': 'oauth2.0认证失败, 即获取 qq信息失败'})
+AttributeError: module 'django.middleware.http' has no attribute 'JsonResponse'
+ERROR 2021-11-09 15:59:47,139 basehttp 154 "GET /oauth_callback/?code=9822E68F631E7F16C6CC2DE419EC32BB HTTP/1.1" 500 91846
+INFO 2021-11-09 16:00:18,676 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 16:00:20,600 views 46 access_token获取失败
+ERROR 2021-11-09 16:00:20,640 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-09 16:00:20,641 basehttp 154 "GET /oauth_callback/?code=9822E68F631E7F16C6CC2DE419EC32BB HTTP/1.1" 500 81850
+INFO 2021-11-09 16:00:25,852 basehttp 154 "GET /oauth_callback/?code=A66161829D81D02CFE8F900C96E30986 HTTP/1.1" 200 65
+INFO 2021-11-09 16:00:25,894 basehttp 154 "GET /image_codes/fbd428cd-4459-400e-8d5c-32e98ad4068b/ HTTP/1.1" 200 3106
+ERROR 2021-11-09 16:00:26,935 views 46 access_token获取失败
+ERROR 2021-11-09 16:00:26,971 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-09 16:00:26,972 basehttp 154 "GET /oauth_callback/?code=A66161829D81D02CFE8F900C96E30986 HTTP/1.1" 500 81850
+INFO 2021-11-09 16:02:04,000 basehttp 154 "GET /oauth_callback HTTP/1.1" 301 0
+WARNING 2021-11-09 16:02:04,011 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-09 16:02:04,012 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 400 10
+WARNING 2021-11-09 16:02:04,117 log 228 Not Found: /favicon.ico
+WARNING 2021-11-09 16:02:04,118 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3612
+ERROR 2021-11-09 16:02:51,675 views 46 access_token获取失败
+ERROR 2021-11-09 16:02:51,719 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-09 16:02:51,720 basehttp 154 "GET /oauth_callback/?code=A66161829D81D02CFE8F900C96E30986 HTTP/1.1" 500 81850
+ERROR 2021-11-09 16:03:20,912 views 46 access_token获取失败
+ERROR 2021-11-09 16:03:20,947 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-09 16:03:20,949 basehttp 154 "GET /oauth_callback/?code=A66161829D81D02CFE8F900C96E30986 HTTP/1.1" 500 81850
+INFO 2021-11-09 16:03:27,116 basehttp 154 "GET /oauth_callback/?code=3525A87BE0BD17E5BD2CC8A0D290D2EC HTTP/1.1" 200 65
+INFO 2021-11-09 16:03:27,161 basehttp 154 "GET /image_codes/53b63de7-1bf2-4792-8b4d-2f8e111ca97b/ HTTP/1.1" 200 3157
+INFO 2021-11-09 16:04:53,632 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:05:50,268 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:05:52,913 basehttp 154 "GET /oauth_callback/?code=494D6995D0BBA56052889CDC1A60B794 HTTP/1.1" 200 65
+ERROR 2021-11-09 16:06:44,658 views 46 access_token获取失败
+ERROR 2021-11-09 16:06:44,696 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-09 16:06:44,697 basehttp 154 "GET /oauth_callback/?code=494D6995D0BBA56052889CDC1A60B794 HTTP/1.1" 500 81850
+INFO 2021-11-09 16:06:49,887 basehttp 154 "GET /oauth_callback/?code=AB797D290CB993DBCC2F0834D19DE0B8 HTTP/1.1" 200 65
+INFO 2021-11-09 16:06:49,940 basehttp 154 "GET /image_codes/b139e64f-33ed-455f-8bfb-6fbbf56debe7/ HTTP/1.1" 200 2806
+ERROR 2021-11-09 16:07:27,596 views 46 access_token获取失败
+ERROR 2021-11-09 16:07:27,627 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-09 16:07:27,628 basehttp 154 "GET /oauth_callback/?code=AB797D290CB993DBCC2F0834D19DE0B8 HTTP/1.1" 500 81850
+INFO 2021-11-09 16:19:25,530 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 16:19:26,201 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:28:17,800 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:34:14,299 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:34:21,000 basehttp 154 "GET /oauth_callback/?code=13586D8A5531AB5F055551F5BB4C9738 HTTP/1.1" 200 65
+INFO 2021-11-09 16:34:21,039 basehttp 154 "GET /image_codes/dcc3562f-bc7b-46c8-bf01-f35af159308b/ HTTP/1.1" 200 3327
+INFO 2021-11-09 16:34:33,193 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-09 16:34:33,222 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-09 16:34:33,224 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82114
+INFO 2021-11-09 16:34:38,315 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-09 16:34:38,346 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-09 16:34:38,347 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82114
+WARNING 2021-11-09 16:34:39,141 log 228 Not Found: /sms_codes/15592155630/
+WARNING 2021-11-09 16:34:39,141 basehttp 154 "GET /sms_codes/15592155630/?image_code=ywym&uuid=dcc3562f-bc7b-46c8-bf01-f35af159308b HTTP/1.1" 404 3707
+ERROR 2021-11-09 16:34:58,161 views 46 access_token获取失败
+ERROR 2021-11-09 16:34:58,188 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-09 16:34:58,188 basehttp 154 "GET /oauth_callback/?code=13586D8A5531AB5F055551F5BB4C9738 HTTP/1.1" 500 82028
+INFO 2021-11-09 16:35:14,837 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:35:39,525 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-09 16:35:46,657 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 94, in get
+    access_token = generate_access_token({'openid': openid})
+NameError: name 'generate_access_token' is not defined
+ERROR 2021-11-09 16:35:46,659 basehttp 154 "GET /oauth_callback/?code=7A294B2DF95930BB56D99A414050F76D HTTP/1.1" 500 82434
+INFO 2021-11-09 16:35:50,403 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-09 16:35:53,114 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 94, in get
+    access_token = generate_access_token({'openid': openid})
+NameError: name 'generate_access_token' is not defined
+ERROR 2021-11-09 16:35:53,115 basehttp 154 "GET /oauth_callback/?code=1ADA0E175967283B4AA69594FB44AD21 HTTP/1.1" 500 82434
+INFO 2021-11-09 16:36:02,578 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 16:36:03,365 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:37:08,461 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:37:21,514 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:37:27,812 basehttp 154 "GET /oauth_callback/?code=6125D2260117678EFBC37896A661E70B HTTP/1.1" 200 65
+INFO 2021-11-09 16:37:27,851 basehttp 154 "GET /image_codes/1c822576-4f5d-4d7f-a65e-5dd917fca6b6/ HTTP/1.1" 200 3088
+INFO 2021-11-09 16:37:39,150 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:37:39,153 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 16:37:54,425 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:37:57,001 basehttp 154 "GET /oauth_callback/?code=76A851206A1A7E069332A4B7CB54B943 HTTP/1.1" 200 65
+INFO 2021-11-09 16:37:57,032 basehttp 154 "GET /image_codes/0c36c582-6932-4ac6-aa0d-4bc3b31a387b/ HTTP/1.1" 200 2896
+ERROR 2021-11-09 16:37:58,387 views 46 access_token获取失败
+ERROR 2021-11-09 16:37:58,426 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-09 16:37:58,427 basehttp 154 "GET /oauth_callback/?code=76A851206A1A7E069332A4B7CB54B943 HTTP/1.1" 500 82028
+INFO 2021-11-09 16:38:02,607 basehttp 154 "GET /oauth_callback/?code=B5C1AA46AF11A0D910F849D03BD22DB2 HTTP/1.1" 200 65
+INFO 2021-11-09 16:38:02,638 basehttp 154 "GET /image_codes/7329e653-97dd-4a4b-b6b9-e5671f680574/ HTTP/1.1" 200 3396
+INFO 2021-11-09 16:38:07,859 basehttp 154 "GET /image_codes/afcd18cc-2dd1-4fc0-9ecf-ef4f780ab9df/ HTTP/1.1" 200 3066
+WARNING 2021-11-09 16:38:12,491 log 228 Not Found: /sms_codes/15592155630/
+WARNING 2021-11-09 16:38:12,491 basehttp 154 "GET /sms_codes/15592155630/?image_code=gprs&uuid=afcd18cc-2dd1-4fc0-9ecf-ef4f780ab9df HTTP/1.1" 404 3707
+INFO 2021-11-09 16:38:20,099 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:38:20,102 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 16:43:40,935 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-09 16:43:41,660 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:45:27,898 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:45:37,215 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-09 16:45:39,942 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    oauth_qquser=OAuthQQUser.objects.get(openid=openid)
+NameError: name 'OAuthQQUser' is not defined
+ERROR 2021-11-09 16:45:39,943 basehttp 154 "GET /oauth_callback/?code=2F29AABD66975E4343E2838F0C886842 HTTP/1.1" 500 82267
+INFO 2021-11-09 16:47:29,158 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:47:34,126 basehttp 154 "GET /oauth_callback/?code=6CBFBA5EC23BB3B7BDF603D42729B3BC HTTP/1.1" 200 65
+INFO 2021-11-09 16:47:34,189 basehttp 154 "GET /image_codes/c12bc6a8-551c-491c-b221-b8fbcfd0c14d/ HTTP/1.1" 200 3223
+WARNING 2021-11-09 16:47:43,789 log 228 Not Found: /sms_codes/15592155630/
+WARNING 2021-11-09 16:47:43,789 basehttp 154 "GET /sms_codes/15592155630/?image_code=zjqe&uuid=c12bc6a8-551c-491c-b221-b8fbcfd0c14d HTTP/1.1" 404 3707
+INFO 2021-11-09 16:47:55,301 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:47:55,305 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 16:48:39,565 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\migrations\0001_initial.py changed, reloading.
+INFO 2021-11-09 16:48:40,653 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:48:51,492 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:48:54,319 basehttp 154 "GET /oauth_callback/?code=FAAD5F196A39E20CF648B36E70794E98 HTTP/1.1" 200 65
+INFO 2021-11-09 16:48:54,358 basehttp 154 "GET /image_codes/daf999ac-7330-4b46-b8db-b4fbf61c0737/ HTTP/1.1" 200 3241
+INFO 2021-11-09 16:49:04,189 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:49:04,191 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 16:51:44,794 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\migrations\0001_initial.py changed, reloading.
+INFO 2021-11-09 16:51:45,828 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-09 16:52:04,369 basehttp 154 "GET /image_codes/6c40ae3a-0708-4fb7-9c9e-0013001c7232/ HTTP/1.1" 200 3294
+INFO 2021-11-09 16:52:07,326 basehttp 154 "GET /usernames/aaaaa/count/ HTTP/1.1" 200 41
+INFO 2021-11-09 16:52:14,275 basehttp 154 "GET /mobiles/15592155630/count/ HTTP/1.1" 200 41
+INFO 2021-11-09 16:52:14,743 basehttp 154 "GET /mobiles/15592155630/count/ HTTP/1.1" 200 41
+INFO 2021-11-09 16:52:20,355 views 62 短信验证码是：652018
+INFO 2021-11-09 16:52:20,359 basehttp 154 "GET /mobiles/15592155630/count/ HTTP/1.1" 200 41
+INFO 2021-11-09 16:52:20,505 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=5uon&uuid=6c40ae3a-0708-4fb7-9c9e-0013001c7232 HTTP/1.1" 200 61
+INFO 2021-11-09 16:52:33,797 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:52:34,058 basehttp 154 "POST /register/ HTTP/1.1" 200 51
+INFO 2021-11-09 16:52:37,882 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:52:41,689 basehttp 154 "GET /oauth_callback/?code=DE13DE6D9312DD88A0478CC8839BC5F2 HTTP/1.1" 200 65
+INFO 2021-11-09 16:52:41,709 basehttp 154 "GET /image_codes/ccfbd32d-e3af-43da-87d1-b274cbd40964/ HTTP/1.1" 200 2964
+INFO 2021-11-09 16:52:52,090 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:52:52,092 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 75
+INFO 2021-11-09 16:53:11,554 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:53:11,764 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-11-09 16:57:35,146 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:57:37,855 basehttp 154 "GET /oauth_callback/?code=F0C4DEAEA86DF59823F8FD497C343B2B HTTP/1.1" 200 65
+INFO 2021-11-09 16:57:37,885 basehttp 154 "GET /image_codes/83703f38-92e8-46c4-b006-830e8463d685/ HTTP/1.1" 200 3828
+WARNING 2021-11-09 16:58:24,469 log 228 Not Found: /sms_codes/15592155630/
+WARNING 2021-11-09 16:58:24,469 basehttp 154 "GET /sms_codes/15592155630/?image_code=omka&uuid=83703f38-92e8-46c4-b006-830e8463d685 HTTP/1.1" 404 3707
+INFO 2021-11-09 16:58:25,403 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:58:25,406 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 16:58:30,450 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:58:30,456 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 51
+INFO 2021-11-09 16:58:32,113 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:58:34,662 basehttp 154 "GET /oauth_callback/?code=3E40AF275A71EAE0E07B9F29D3F7728C HTTP/1.1" 200 65
+INFO 2021-11-09 16:58:34,687 basehttp 154 "GET /image_codes/b6021ef7-38e7-4d21-b898-40b14b70b1e5/ HTTP/1.1" 200 3043
+INFO 2021-11-09 16:58:40,555 basehttp 154 "GET /image_codes/4a9bc8d3-40e7-4cae-b75a-d1072d801577/ HTTP/1.1" 200 3447
+WARNING 2021-11-09 16:58:46,059 log 228 Not Found: /sms_codes/15592155630/
+WARNING 2021-11-09 16:58:46,060 basehttp 154 "GET /sms_codes/15592155630/?image_code=xred&uuid=4a9bc8d3-40e7-4cae-b75a-d1072d801577 HTTP/1.1" 404 3707
+INFO 2021-11-09 16:58:46,586 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:58:46,588 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 16:58:53,026 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:58:55,764 basehttp 154 "GET /oauth_callback/?code=394B22E4A39FFD8A273820AE0837CD16 HTTP/1.1" 200 65
+INFO 2021-11-09 16:58:55,787 basehttp 154 "GET /image_codes/2d9bd083-edc4-48ac-beeb-639089426abd/ HTTP/1.1" 200 2870
+WARNING 2021-11-09 16:59:05,772 log 228 Not Found: /sms_codes/15592155630/
+WARNING 2021-11-09 16:59:05,773 basehttp 154 "GET /sms_codes/15592155630/?image_code=3lik&uuid=2d9bd083-edc4-48ac-beeb-639089426abd HTTP/1.1" 404 3707
+INFO 2021-11-09 16:59:07,378 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:59:07,380 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 16:59:17,690 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:59:25,382 basehttp 154 "GET /oauth_callback/?code=A468C3A6C8A5F9BF3C3D57FD09BCF449 HTTP/1.1" 200 65
+INFO 2021-11-09 16:59:25,412 basehttp 154 "GET /image_codes/46a5433f-3396-4741-ae0f-6c074f3b7a02/ HTTP/1.1" 200 3130
+INFO 2021-11-09 16:59:36,218 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 16:59:36,220 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 16:59:46,714 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 16:59:49,626 basehttp 154 "GET /oauth_callback/?code=F69ADAEEBA8145A542B9D5DC9F9016AC HTTP/1.1" 200 65
+INFO 2021-11-09 16:59:49,656 basehttp 154 "GET /image_codes/01be8b41-4aeb-4f7a-8adf-25cc86042927/ HTTP/1.1" 200 2997
+INFO 2021-11-09 17:00:00,475 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-09 17:00:00,477 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-09 17:15:05,796 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-09 17:15:14,246 basehttp 154 "GET /oauth_callback/?code=F4B6C5AAE34814FE8DC11A1B94954554 HTTP/1.1" 200 65
+INFO 2021-11-09 17:15:14,272 basehttp 154 "GET /image_codes/017f5f90-7213-4723-9b96-aacd561cd127/ HTTP/1.1" 200 3056
+INFO 2021-11-10 13:24:34,568 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 13:24:58,306 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 13:25:01,060 basehttp 154 "GET /oauth_callback/?code=3787DFA8A55F1DAF04C748D57ADD6568 HTTP/1.1" 200 65
+WARNING 2021-11-10 13:25:01,073 log 228 Not Found: /imgs/d7b8f93d-6f53-45a9-8a3a-fe1216cceaee/
+WARNING 2021-11-10 13:25:01,075 basehttp 154 "GET /imgs/d7b8f93d-6f53-45a9-8a3a-fe1216cceaee/ HTTP/1.1" 404 3705
+ERROR 2021-11-10 13:25:03,372 views 46 access_token获取失败
+ERROR 2021-11-10 13:25:03,400 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-10 13:25:03,401 basehttp 154 "GET /oauth_callback/?code=3787DFA8A55F1DAF04C748D57ADD6568 HTTP/1.1" 500 81772
+INFO 2021-11-10 13:25:07,415 basehttp 154 "GET /oauth_callback/?code=71E4AEE95C7E253756CDF8C4CF4A954C HTTP/1.1" 200 65
+WARNING 2021-11-10 13:25:07,424 log 228 Not Found: /imgs/2f079d8d-2f3c-4d93-9d78-ddf0e10f80cb/
+WARNING 2021-11-10 13:25:07,424 basehttp 154 "GET /imgs/2f079d8d-2f3c-4d93-9d78-ddf0e10f80cb/ HTTP/1.1" 404 3705
+INFO 2021-11-10 13:25:34,653 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 13:25:37,148 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 13:25:39,729 basehttp 154 "GET /oauth_callback/?code=4AE71CF8970B6C1B6577F9615131E9A1 HTTP/1.1" 200 65
+WARNING 2021-11-10 13:25:39,739 log 228 Not Found: /imgs/08df6586-75e0-4f85-8cbe-5390d58a14d2/
+WARNING 2021-11-10 13:25:39,739 basehttp 154 "GET /imgs/08df6586-75e0-4f85-8cbe-5390d58a14d2/ HTTP/1.1" 404 3705
+ERROR 2021-11-10 13:26:05,393 views 46 access_token获取失败
+ERROR 2021-11-10 13:26:05,429 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-10 13:26:05,430 basehttp 154 "GET /oauth_callback/?code=4AE71CF8970B6C1B6577F9615131E9A1 HTTP/1.1" 500 82033
+INFO 2021-11-10 13:26:08,882 basehttp 154 "GET /oauth_callback/?code=307D7DED674BEFE9E2A8F4896D0729AA HTTP/1.1" 200 65
+WARNING 2021-11-10 13:26:08,900 log 228 Not Found: /imgs/96b0034f-ccf0-4fe7-b6a1-47ccdd987d2e/
+WARNING 2021-11-10 13:26:08,900 basehttp 154 "GET /imgs/96b0034f-ccf0-4fe7-b6a1-47ccdd987d2e/ HTTP/1.1" 404 3705
+ERROR 2021-11-10 13:26:10,825 views 46 access_token获取失败
+ERROR 2021-11-10 13:26:10,850 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-10 13:26:10,851 basehttp 154 "GET /oauth_callback/?code=307D7DED674BEFE9E2A8F4896D0729AA HTTP/1.1" 500 82033
+INFO 2021-11-10 13:26:26,283 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 13:26:40,735 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 13:26:43,258 basehttp 154 "GET /oauth_callback/?code=EFB98993D159B6012674E9D0BAE1AC71 HTTP/1.1" 200 65
+WARNING 2021-11-10 13:26:43,270 log 228 Not Found: /imgs/d8c3b2ab-4137-439a-8864-1db7b3e120d1/
+WARNING 2021-11-10 13:26:43,270 basehttp 154 "GET /imgs/d8c3b2ab-4137-439a-8864-1db7b3e120d1/ HTTP/1.1" 404 3705
+WARNING 2021-11-10 13:26:45,927 log 228 Not Found: /imgs/437bb3c4-8067-48fa-9f7a-3417a16d691a/
+WARNING 2021-11-10 13:26:45,927 basehttp 154 "GET /imgs/437bb3c4-8067-48fa-9f7a-3417a16d691a/ HTTP/1.1" 404 3705
+WARNING 2021-11-10 13:26:46,288 log 228 Not Found: /imgs/277578fb-b90d-430e-8ec1-bdbd74b15b56/
+WARNING 2021-11-10 13:26:46,289 basehttp 154 "GET /imgs/277578fb-b90d-430e-8ec1-bdbd74b15b56/ HTTP/1.1" 404 3705
+WARNING 2021-11-10 13:26:46,461 log 228 Not Found: /imgs/4eba5a65-8aef-433b-b59c-c32b7355a05b/
+WARNING 2021-11-10 13:26:46,462 basehttp 154 "GET /imgs/4eba5a65-8aef-433b-b59c-c32b7355a05b/ HTTP/1.1" 404 3705
+WARNING 2021-11-10 13:26:46,630 log 228 Not Found: /imgs/b0cf832c-0301-4967-a67f-159ae6d368a3/
+WARNING 2021-11-10 13:26:46,630 basehttp 154 "GET /imgs/b0cf832c-0301-4967-a67f-159ae6d368a3/ HTTP/1.1" 404 3705
+WARNING 2021-11-10 13:26:46,798 log 228 Not Found: /imgs/6f083923-450b-405d-97f9-f4c8b09c0aec/
+WARNING 2021-11-10 13:26:46,799 basehttp 154 "GET /imgs/6f083923-450b-405d-97f9-f4c8b09c0aec/ HTTP/1.1" 404 3705
+WARNING 2021-11-10 13:26:46,959 log 228 Not Found: /imgs/6763098d-064a-42ec-b267-97c7fe4dbcec/
+WARNING 2021-11-10 13:26:46,960 basehttp 154 "GET /imgs/6763098d-064a-42ec-b267-97c7fe4dbcec/ HTTP/1.1" 404 3705
+WARNING 2021-11-10 13:26:47,094 log 228 Not Found: /imgs/f404f90b-85fa-4928-a385-a0da101aa74f/
+WARNING 2021-11-10 13:26:47,095 basehttp 154 "GET /imgs/f404f90b-85fa-4928-a385-a0da101aa74f/ HTTP/1.1" 404 3705
+INFO 2021-11-10 13:27:04,894 basehttp 154 "GET /oauth_callback/?code=64FA1D3B6CFA9D0C1732AC49468C796A HTTP/1.1" 200 65
+WARNING 2021-11-10 13:27:04,903 log 228 Not Found: /imgs/51ffa0aa-230c-435a-b6fa-8f8754e3bd04/
+WARNING 2021-11-10 13:27:04,904 basehttp 154 "GET /imgs/51ffa0aa-230c-435a-b6fa-8f8754e3bd04/ HTTP/1.1" 404 3705
+ERROR 2021-11-10 13:27:06,548 views 46 access_token获取失败
+ERROR 2021-11-10 13:27:06,572 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-10 13:27:06,574 basehttp 154 "GET /oauth_callback/?code=64FA1D3B6CFA9D0C1732AC49468C796A HTTP/1.1" 500 81772
+WARNING 2021-11-10 13:27:33,858 log 228 Not Found: /
+WARNING 2021-11-10 13:27:33,859 basehttp 154 "GET / HTTP/1.1" 404 3561
+WARNING 2021-11-10 13:27:33,929 log 228 Not Found: /favicon.ico
+WARNING 2021-11-10 13:27:33,930 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3612
+INFO 2021-11-10 13:27:40,348 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 13:27:42,698 basehttp 154 "GET /oauth_callback/?code=9029AA143E23D2DE164B7205CFBE8220 HTTP/1.1" 200 65
+WARNING 2021-11-10 13:27:42,708 log 228 Not Found: /imgs/8805a3b8-5987-412e-8e0e-a06d70dd8e6f/
+WARNING 2021-11-10 13:27:42,708 basehttp 154 "GET /imgs/8805a3b8-5987-412e-8e0e-a06d70dd8e6f/ HTTP/1.1" 404 3705
+ERROR 2021-11-10 13:27:48,546 views 46 access_token获取失败
+ERROR 2021-11-10 13:27:48,571 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-10 13:27:48,572 basehttp 154 "GET /oauth_callback/?code=9029AA143E23D2DE164B7205CFBE8220 HTTP/1.1" 500 82033
+INFO 2021-11-10 13:28:04,290 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 13:28:09,002 basehttp 154 "GET /oauth_callback/?code=FC5E4AB7E0B28DBDB460DBFBC3BD1D8F HTTP/1.1" 200 65
+INFO 2021-11-10 13:28:09,055 basehttp 154 "GET /image_codes/3ca96bf3-e3cc-4c65-bce5-a6c6afc7f36f/ HTTP/1.1" 200 3416
+INFO 2021-11-10 13:28:24,112 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 13:28:24,115 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 13:29:48,780 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 13:29:51,277 basehttp 154 "GET /oauth_callback/?code=6F63BC5F87652C16C805FC14862EBAFE HTTP/1.1" 200 65
+INFO 2021-11-10 13:29:51,304 basehttp 154 "GET /image_codes/ae84d77d-e23c-4913-8adf-6f18dfbdcd86/ HTTP/1.1" 200 3404
+INFO 2021-11-10 13:30:09,164 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 13:30:09,167 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+ERROR 2021-11-10 13:31:36,624 views 46 access_token获取失败
+ERROR 2021-11-10 13:31:36,669 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-10 13:31:36,670 basehttp 154 "GET /oauth_callback/?code=6F63BC5F87652C16C805FC14862EBAFE HTTP/1.1" 500 82033
+INFO 2021-11-10 13:32:30,466 basehttp 154 "GET /oauth_callback/?code=B4397AF4050EB2A6775B8B9521A9D676 HTTP/1.1" 200 65
+INFO 2021-11-10 13:32:30,487 basehttp 154 "GET /image_codes/5dfa1165-c36a-4ff6-81fd-dd6a6ed1365d/ HTTP/1.1" 200 3144
+INFO 2021-11-10 13:32:38,315 basehttp 154 "GET /image_codes/b4b7681a-10dc-4c33-89a9-5293506f9322/ HTTP/1.1" 200 3376
+INFO 2021-11-10 13:32:45,148 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 13:32:45,150 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 13:32:46,555 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 13:32:46,557 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+WARNING 2021-11-10 13:34:34,838 log 228 Not Found: /sms_codes/15592155630/
+WARNING 2021-11-10 13:34:34,838 basehttp 154 "GET /sms_codes/15592155630/?image_code=vnfl&uuid=b4b7681a-10dc-4c33-89a9-5293506f9322 HTTP/1.1" 404 3707
+ERROR 2021-11-10 13:36:37,634 views 46 access_token获取失败
+ERROR 2021-11-10 13:36:37,662 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-10 13:36:37,662 basehttp 154 "GET /oauth_callback/?code=B4397AF4050EB2A6775B8B9521A9D676 HTTP/1.1" 500 82033
+INFO 2021-11-10 13:36:47,699 basehttp 154 "GET /oauth_callback/?code=81F35787EBBF1992BC868C2536EDBB05 HTTP/1.1" 200 65
+INFO 2021-11-10 13:36:47,722 basehttp 154 "GET /image_codes/e8c8944c-d629-49ba-8a88-f29de95430db/ HTTP/1.1" 200 3392
+INFO 2021-11-10 13:36:58,019 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=wnmy&uuid=undefined HTTP/1.1" 200 93
+ERROR 2021-11-10 13:37:48,966 views 46 access_token获取失败
+ERROR 2021-11-10 13:37:48,998 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 48, in get
+    return JsonResponse({'code': 200 ,'access_token':openid})
+UnboundLocalError: local variable 'openid' referenced before assignment
+ERROR 2021-11-10 13:37:48,999 basehttp 154 "GET /oauth_callback/?code=81F35787EBBF1992BC868C2536EDBB05 HTTP/1.1" 500 82033
+INFO 2021-11-10 13:37:54,466 basehttp 154 "GET /oauth_callback/?code=3D9B0B135A7C5DBC4053AB82BAA68273 HTTP/1.1" 200 65
+INFO 2021-11-10 13:37:54,494 basehttp 154 "GET /image_codes/c1bec4d9-5aa4-4de9-b59d-e4572d59a54b/ HTTP/1.1" 200 3081
+INFO 2021-11-10 13:38:03,635 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=sfpt&uuid= HTTP/1.1" 200 63
+INFO 2021-11-10 13:40:33,224 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 13:40:33,777 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 13:42:36,752 views 47 access_token获取失败
+INFO 2021-11-10 13:42:36,753 basehttp 154 "GET /oauth_callback/?code=3D9B0B135A7C5DBC4053AB82BAA68273 HTTP/1.1" 200 106
+INFO 2021-11-10 13:42:36,788 basehttp 154 "GET /image_codes/ecd93ab7-4cbe-441a-af5f-57a8026881f7/ HTTP/1.1" 200 2788
+INFO 2021-11-10 13:42:36,932 basehttp 154 "GET /image_codes/e8590150-6e7b-4b59-a2da-0f82d0ec6fd3/ HTTP/1.1" 200 3389
+INFO 2021-11-10 13:42:40,202 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=&uuid=e8590150-6e7b-4b59-a2da-0f82d0ec6fd3 HTTP/1.1" 200 63
+INFO 2021-11-10 13:43:07,639 basehttp 154 "GET /oauth_callback/?code=06FD360309A8AC906839FAEF6C658898 HTTP/1.1" 200 65
+INFO 2021-11-10 13:43:07,655 basehttp 154 "GET /image_codes/94c03606-f4f6-4f99-8dcc-c65b0788d6e9/ HTTP/1.1" 200 2892
+INFO 2021-11-10 13:43:13,330 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=&uuid=94c03606-f4f6-4f99-8dcc-c65b0788d6e9 HTTP/1.1" 200 63
+INFO 2021-11-10 13:44:14,767 basehttp 154 "GET /oauth_callback/?code=4A105862C368D1EA8AA1F1697AC5B48D HTTP/1.1" 200 65
+INFO 2021-11-10 13:44:14,788 basehttp 154 "GET /image_codes/9022ec6a-9945-4fde-9173-084874a778d0/ HTTP/1.1" 200 3027
+INFO 2021-11-10 13:44:17,841 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=&uuid=9022ec6a-9945-4fde-9173-084874a778d0 HTTP/1.1" 200 63
+INFO 2021-11-10 13:44:36,400 basehttp 154 "GET /oauth_callback/?code=6984F3D0AAC289AD7B5316F240DEAF2E HTTP/1.1" 200 65
+INFO 2021-11-10 13:44:36,423 basehttp 154 "GET /image_codes/2c8c9a4f-23c3-417a-9640-db330671c49c/ HTTP/1.1" 200 3428
+INFO 2021-11-10 13:44:42,987 views 62 短信验证码是：252633
+INFO 2021-11-10 13:44:43,111 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=orha&uuid=2c8c9a4f-23c3-417a-9640-db330671c49c HTTP/1.1" 200 61
+INFO 2021-11-10 13:44:54,446 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 13:44:54,474 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 13:44:54,475 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82533
+INFO 2021-11-10 13:44:56,482 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 13:44:56,507 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 13:44:56,508 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82533
+INFO 2021-11-10 13:50:14,423 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 13:51:01,616 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 13:52:12,671 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 13:52:49,230 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 13:52:52,959 basehttp 154 "GET /oauth_callback/?code=F3A332B3A5E1CA740C148C72C59C7C87 HTTP/1.1" 200 65
+INFO 2021-11-10 13:52:52,990 basehttp 154 "GET /image_codes/4ea03672-3ef1-414a-96c7-8c34113132c9/ HTTP/1.1" 200 3280
+INFO 2021-11-10 13:53:02,282 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=exe3&uuid=4ea03672-3ef1-414a-96c7-8c34113132c9 HTTP/1.1" 200 99
+INFO 2021-11-10 13:53:23,366 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 13:53:23,369 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 13:53:24,681 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 13:53:31,257 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 13:53:31,674 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 13:53:31,841 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 13:53:32,017 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 13:53:40,393 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 13:53:44,739 views 47 access_token获取失败
+INFO 2021-11-10 13:53:44,740 basehttp 154 "GET /oauth_callback/?code=F3A332B3A5E1CA740C148C72C59C7C87 HTTP/1.1" 200 106
+INFO 2021-11-10 13:53:44,766 basehttp 154 "GET /image_codes/809195bb-8fcd-4d54-bfbe-50e1cff04c80/ HTTP/1.1" 200 3237
+INFO 2021-11-10 13:53:54,105 views 62 短信验证码是：370873
+INFO 2021-11-10 13:53:54,215 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=psre&uuid=809195bb-8fcd-4d54-bfbe-50e1cff04c80 HTTP/1.1" 200 61
+ERROR 2021-11-10 13:54:01,813 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 13:54:01,814 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82160
+ERROR 2021-11-10 13:54:02,849 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 13:54:02,850 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82160
+ERROR 2021-11-10 13:54:29,108 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 13:54:29,108 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82160
+INFO 2021-11-10 14:01:40,957 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+WARNING 2021-11-10 14:01:52,254 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-10 14:01:52,254 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 400 10
+WARNING 2021-11-10 14:01:52,334 log 228 Not Found: /favicon.ico
+WARNING 2021-11-10 14:01:52,335 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3612
+INFO 2021-11-10 14:02:08,523 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 14:02:13,770 basehttp 154 "GET /oauth_callback/?code=759C448763414EDB8DF6CCABC2F53C06 HTTP/1.1" 200 65
+INFO 2021-11-10 14:02:13,789 basehttp 154 "GET /image_codes/38e37379-2ada-41db-acf1-1862f72184a9/ HTTP/1.1" 200 3602
+INFO 2021-11-10 14:02:23,042 views 62 短信验证码是：538343
+INFO 2021-11-10 14:02:23,046 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=eabg&uuid=38e37379-2ada-41db-acf1-1862f72184a9 HTTP/1.1" 200 61
+INFO 2021-11-10 14:02:36,668 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:02:36,695 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 14:02:36,697 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82531
+INFO 2021-11-10 14:03:02,939 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 14:03:05,923 basehttp 154 "GET /oauth_callback/?code=FEFBB2D93524A0666A1C78127D89DABD HTTP/1.1" 200 65
+INFO 2021-11-10 14:03:05,940 basehttp 154 "GET /image_codes/bb9bc33d-a9c4-42e5-bb98-24796624e6fd/ HTTP/1.1" 200 3031
+INFO 2021-11-10 14:03:15,138 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=sfuy&uuid=bb9bc33d-a9c4-42e5-bb98-24796624e6fd HTTP/1.1" 200 75
+INFO 2021-11-10 14:03:28,300 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:03:28,325 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 14:03:28,326 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82270
+WARNING 2021-11-10 14:03:33,811 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-10 14:03:33,812 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 400 10
+WARNING 2021-11-10 14:03:33,896 log 228 Not Found: /favicon.ico
+WARNING 2021-11-10 14:03:33,898 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3612
+ERROR 2021-11-10 14:05:16,263 views 47 access_token获取失败
+INFO 2021-11-10 14:05:16,263 basehttp 154 "GET /oauth_callback/?code=FEFBB2D93524A0666A1C78127D89DABD HTTP/1.1" 200 106
+INFO 2021-11-10 14:05:16,285 basehttp 154 "GET /image_codes/08259cad-829f-4aef-8542-7b08ee448ed4/ HTTP/1.1" 200 2969
+WARNING 2021-11-10 14:05:19,118 log 228 Not Found: /oauth_callback.html
+WARNING 2021-11-10 14:05:19,119 basehttp 154 "GET /oauth_callback.html?code=FEFBB2D93524A0666A1C78127D89DABD&state=meiduosite HTTP/1.1" 404 3695
+ERROR 2021-11-10 14:05:24,092 views 47 access_token获取失败
+INFO 2021-11-10 14:05:24,092 basehttp 154 "GET /oauth_callback/?code=FEFBB2D93524A0666A1C78127D89DABD HTTP/1.1" 200 106
+INFO 2021-11-10 14:05:24,122 basehttp 154 "GET /image_codes/72c1e61c-52a3-432d-a5a0-4d710fcb14bd/ HTTP/1.1" 200 3356
+INFO 2021-11-10 14:05:34,714 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=rghz&uuid=72c1e61c-52a3-432d-a5a0-4d710fcb14bd HTTP/1.1" 200 99
+INFO 2021-11-10 14:05:45,937 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 14:05:53,337 views 47 access_token获取失败
+INFO 2021-11-10 14:05:53,338 basehttp 154 "GET /oauth_callback/?code=FEFBB2D93524A0666A1C78127D89DABD HTTP/1.1" 200 106
+INFO 2021-11-10 14:05:53,373 basehttp 154 "GET /image_codes/b914e0b5-dec7-4b50-9342-b8ff7c5740ee/ HTTP/1.1" 200 3391
+INFO 2021-11-10 14:06:01,474 views 62 短信验证码是：175793
+INFO 2021-11-10 14:06:01,578 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=bver&uuid=b914e0b5-dec7-4b50-9342-b8ff7c5740ee HTTP/1.1" 200 61
+INFO 2021-11-10 14:06:08,238 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:06:08,266 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 80, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 14:06:08,267 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82421
+INFO 2021-11-10 14:08:26,349 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:08:27,855 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:08:27,905 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 81, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    data = serializer.loads(access_token)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:08:27,907 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98104
+WARNING 2021-11-10 14:08:35,011 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-10 14:08:35,012 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 400 10
+WARNING 2021-11-10 14:08:44,802 log 228 Bad Request: /oauth_callback/
+WARNING 2021-11-10 14:08:44,802 basehttp 154 "GET /oauth_callback/ HTTP/1.1" 400 10
+INFO 2021-11-10 14:08:47,787 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:08:47,819 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 81, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    data = serializer.loads(access_token)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:08:47,820 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98104
+INFO 2021-11-10 14:10:02,443 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-10 14:11:01,850 log 228 Not Found: /
+WARNING 2021-11-10 14:11:01,851 basehttp 154 "GET / HTTP/1.1" 404 3555
+WARNING 2021-11-10 14:11:02,009 log 228 Not Found: /favicon.ico
+WARNING 2021-11-10 14:11:02,010 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3606
+ERROR 2021-11-10 14:11:23,346 views 48 access_token获取失败
+INFO 2021-11-10 14:11:23,347 basehttp 154 "GET /oauth_callback/?code=FEFBB2D93524A0666A1C78127D89DABD HTTP/1.1" 200 106
+INFO 2021-11-10 14:11:23,380 basehttp 154 "GET /image_codes/d1e652e9-a485-45b9-af5d-255054a6105d/ HTTP/1.1" 200 3203
+INFO 2021-11-10 14:11:33,034 views 62 短信验证码是：438664
+INFO 2021-11-10 14:11:33,141 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=l8za&uuid=d1e652e9-a485-45b9-af5d-255054a6105d HTTP/1.1" 200 61
+INFO 2021-11-10 14:11:40,324 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:11:40,356 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 81, in post
+    openid = check_access_token(access_token)
+NameError: name 'check_access_token' is not defined
+ERROR 2021-11-10 14:11:40,357 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82421
+INFO 2021-11-10 14:13:02,411 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:13:09,637 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:13:11,509 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:13:11,553 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 81, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    data = serializer.loads(access_token)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:13:11,555 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98104
+INFO 2021-11-10 14:14:31,801 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:14:31,831 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 81, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    data = serializer.loads(access_token)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:14:31,831 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98104
+INFO 2021-11-10 14:16:00,460 basehttp 154 "GET /oauth_callback/?code=E4FB15CA6F99349F8E2BB52ED926D8DF HTTP/1.1" 200 65
+INFO 2021-11-10 14:16:00,489 basehttp 154 "GET /image_codes/85de301b-7cf9-4b64-b606-be99e7964f99/ HTTP/1.1" 200 3224
+INFO 2021-11-10 14:16:15,250 views 62 短信验证码是：680766
+INFO 2021-11-10 14:16:15,345 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=r8ja&uuid=85de301b-7cf9-4b64-b606-be99e7964f99 HTTP/1.1" 200 61
+INFO 2021-11-10 14:16:23,234 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 14:16:23,236 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 63
+INFO 2021-11-10 14:20:11,540 basehttp 154 "GET /oauth_callback/?code=5628E6C59983138BC24C6D920FCA46ED HTTP/1.1" 200 65
+INFO 2021-11-10 14:20:11,563 basehttp 154 "GET /image_codes/86b8cb8a-c504-4b95-b26b-32872cf8e8e3/ HTTP/1.1" 200 3331
+INFO 2021-11-10 14:20:19,762 views 62 短信验证码是：872999
+INFO 2021-11-10 14:20:19,767 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=bjzg&uuid=86b8cb8a-c504-4b95-b26b-32872cf8e8e3 HTTP/1.1" 200 61
+INFO 2021-11-10 14:20:26,674 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 14:20:26,676 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 63
+INFO 2021-11-10 14:21:04,074 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 14:21:04,655 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:21:13,055 basehttp 154 "GET /oauth_callback/?code=7332DC39550B92AD34D16A78525951DF HTTP/1.1" 200 65
+INFO 2021-11-10 14:21:13,084 basehttp 154 "GET /image_codes/0bf2f3ae-9f3d-4f7e-b6e5-ff69c44906e2/ HTTP/1.1" 200 3168
+INFO 2021-11-10 14:21:25,257 views 62 短信验证码是：735596
+INFO 2021-11-10 14:21:25,382 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=syz5&uuid=0bf2f3ae-9f3d-4f7e-b6e5-ff69c44906e2 HTTP/1.1" 200 61
+INFO 2021-11-10 14:21:32,444 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 14:21:32,446 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 63
+INFO 2021-11-10 14:25:34,039 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 14:25:34,817 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:26:09,297 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 14:26:09,880 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:28:23,731 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 14:28:38,530 views 71 name 'OAuthQQUser' is not defined
+INFO 2021-11-10 14:28:38,531 basehttp 154 "GET /oauth_callback/?code=A4EC6C3CB0C3013C751D2B17894051EA HTTP/1.1" 200 106
+INFO 2021-11-10 14:28:38,567 basehttp 154 "GET /image_codes/808206e3-f665-4b07-88f9-6c16436b9161/ HTTP/1.1" 200 2899
+INFO 2021-11-10 14:28:46,954 views 62 短信验证码是：906943
+INFO 2021-11-10 14:28:47,080 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=dfvk&uuid=808206e3-f665-4b07-88f9-6c16436b9161 HTTP/1.1" 200 61
+INFO 2021-11-10 14:28:52,540 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:28:52,572 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 105, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    data = serializer.loads(access_token)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:28:52,574 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98109
+INFO 2021-11-10 14:29:33,871 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 14:29:34,437 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:29:53,478 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 14:29:54,139 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 14:30:00,416 views 70 name 'OAuthQQUser' is not defined
+INFO 2021-11-10 14:30:00,416 basehttp 154 "GET /oauth_callback/?code=ECEEB80C1F9EC15C84E9A3DCE70867E8 HTTP/1.1" 200 106
+INFO 2021-11-10 14:30:00,446 basehttp 154 "GET /image_codes/0f88b7ce-81d3-4d34-9ae5-21cc0f8c7975/ HTTP/1.1" 200 3193
+INFO 2021-11-10 14:30:17,955 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 14:30:18,627 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:30:27,719 views 62 短信验证码是：419913
+INFO 2021-11-10 14:30:27,865 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=tklr&uuid=0f88b7ce-81d3-4d34-9ae5-21cc0f8c7975 HTTP/1.1" 200 61
+INFO 2021-11-10 14:30:35,091 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:30:35,123 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 104, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    data = serializer.loads(access_token)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:30:35,124 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98109
+INFO 2021-11-10 14:32:14,098 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py changed, reloading.
+INFO 2021-11-10 14:32:14,659 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:32:51,334 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py changed, reloading.
+INFO 2021-11-10 14:32:51,881 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 14:33:54,721 views 70 name 'OAuthQQUser' is not defined
+INFO 2021-11-10 14:33:54,721 basehttp 154 "GET /oauth_callback/?code=C1F9EB6D24E4C99579248157F35A024E HTTP/1.1" 200 106
+INFO 2021-11-10 14:33:54,752 basehttp 154 "GET /image_codes/34c31c21-c59e-4111-bdb8-1771ba46aa63/ HTTP/1.1" 200 3350
+INFO 2021-11-10 14:34:03,370 views 62 短信验证码是：856352
+INFO 2021-11-10 14:34:03,486 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=xaqd&uuid=34c31c21-c59e-4111-bdb8-1771ba46aa63 HTTP/1.1" 200 61
+INFO 2021-11-10 14:34:10,931 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:34:10,966 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 104, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    :return: openid or None
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:34:10,968 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98403
+INFO 2021-11-10 14:35:13,290 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:35:13,318 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 104, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    :return: openid or None
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:35:13,319 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98403
+ERROR 2021-11-10 14:35:20,502 views 70 name 'OAuthQQUser' is not defined
+INFO 2021-11-10 14:35:20,503 basehttp 154 "GET /oauth_callback/?code=7BA036ECC5FCBABC42C11221FADCFCC6 HTTP/1.1" 200 106
+INFO 2021-11-10 14:35:20,525 basehttp 154 "GET /image_codes/80d18bcf-b066-42ab-ad01-9ab7ebd83701/ HTTP/1.1" 200 3448
+INFO 2021-11-10 14:35:28,698 views 62 短信验证码是：401631
+INFO 2021-11-10 14:35:28,715 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=ig3j&uuid=80d18bcf-b066-42ab-ad01-9ab7ebd83701 HTTP/1.1" 200 61
+INFO 2021-11-10 14:35:44,299 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:35:44,327 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 104, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 18, in check_access_token
+    :return: openid or None
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:35:44,328 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98403
+ERROR 2021-11-10 14:36:49,629 views 70 name 'OAuthQQUser' is not defined
+INFO 2021-11-10 14:36:49,629 basehttp 154 "GET /oauth_callback/?code=7B0EAFC04904ADB51984CB98F530C4EB HTTP/1.1" 200 106
+INFO 2021-11-10 14:36:49,653 basehttp 154 "GET /image_codes/bf4f3e75-93c2-4a45-94ef-acde12678206/ HTTP/1.1" 200 3147
+INFO 2021-11-10 14:38:57,997 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 14:38:58,713 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 14:39:02,373 views 70 access_token获取失败
+INFO 2021-11-10 14:39:02,374 basehttp 154 "GET /oauth_callback/?code=7B0EAFC04904ADB51984CB98F530C4EB HTTP/1.1" 200 106
+INFO 2021-11-10 14:39:02,408 basehttp 154 "GET /image_codes/c7bcb5d4-1f4d-4a66-900c-3a4390f9f84a/ HTTP/1.1" 200 3119
+INFO 2021-11-10 14:39:06,469 basehttp 154 "GET /oauth_callback/?code=FC81BE146DA66F6DF7FE77743CB50F1F HTTP/1.1" 200 247
+INFO 2021-11-10 14:39:06,489 basehttp 154 "GET /image_codes/26170464-cdfe-4de3-86c5-8fb098473d33/ HTTP/1.1" 200 3242
+INFO 2021-11-10 14:39:19,464 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=2gp9&uuid=26170464-cdfe-4de3-86c5-8fb098473d33 HTTP/1.1" 200 99
+INFO 2021-11-10 14:39:36,922 basehttp 154 "GET /oauth_callback/?code=A70EFDD5A75E724CCF4E3875FCAA169F HTTP/1.1" 200 247
+INFO 2021-11-10 14:39:36,946 basehttp 154 "GET /image_codes/9bfe211b-b0dc-4d16-9492-e587e8b07060/ HTTP/1.1" 200 3322
+INFO 2021-11-10 14:39:49,962 basehttp 154 "GET /image_codes/4416647f-bf0c-4a14-a1c5-c58bd0415d99/ HTTP/1.1" 200 3391
+INFO 2021-11-10 14:39:54,863 views 62 短信验证码是：316314
+INFO 2021-11-10 14:39:54,969 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=rpmn&uuid=4416647f-bf0c-4a14-a1c5-c58bd0415d99 HTTP/1.1" 200 61
+INFO 2021-11-10 14:40:00,260 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 14:40:00,442 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 14:40:10,561 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:40:10,811 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 123, in post
+    login(request, user)
+NameError: name 'login' is not defined
+ERROR 2021-11-10 14:40:10,812 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 82869
+INFO 2021-11-10 14:40:52,465 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py changed, reloading.
+INFO 2021-11-10 14:40:53,012 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:40:54,340 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 14:40:54,562 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 27
+ERROR 2021-11-10 14:44:18,985 views 70 get() returned more than one OAuthQQUser -- it returned 2!
+INFO 2021-11-10 14:44:18,986 basehttp 154 "GET /oauth_callback/?code=09A9EA3FBE4A99AC4F2D9F301B7AFF7B HTTP/1.1" 200 106
+INFO 2021-11-10 14:44:19,015 basehttp 154 "GET /image_codes/45553729-bb77-48cc-b10a-eab3b318667f/ HTTP/1.1" 200 3160
+INFO 2021-11-10 14:44:28,201 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-10 14:44:31,066 views 70 get() returned more than one OAuthQQUser -- it returned 2!
+INFO 2021-11-10 14:44:31,067 basehttp 154 "GET /oauth_callback/?code=2347E95EEC1D8374EF34E4B2AA3B79C8 HTTP/1.1" 200 106
+INFO 2021-11-10 14:44:31,087 basehttp 154 "GET /image_codes/6e10e27e-59cf-4495-9078-8e38676c1939/ HTTP/1.1" 200 3373
+INFO 2021-11-10 14:44:37,764 basehttp 154 "GET /image_codes/80324d7d-5eb9-4289-9a85-0718e03cb8e4/ HTTP/1.1" 200 3232
+INFO 2021-11-10 14:44:43,127 views 62 短信验证码是：143051
+INFO 2021-11-10 14:44:43,233 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=h8g4&uuid=80324d7d-5eb9-4289-9a85-0718e03cb8e4 HTTP/1.1" 200 61
+INFO 2021-11-10 14:44:50,337 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+ERROR 2021-11-10 14:44:50,387 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 104, in post
+    openid = check_access_token(access_token)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\utils.py", line 22, in check_access_token
+    data = serializer.loads(access_token)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 217, in loads
+    payload, header = super().loads(s, salt, return_header=True)
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\jws.py", line 169, in loads
+    self.make_signer(salt, self.algorithm).unsign(want_bytes(s)),
+  File "D:\book\源码\venv\lib\site-packages\itsdangerous\signer.py", line 239, in unsign
+    if self.sep not in signed_value:
+TypeError: argument of type 'NoneType' is not iterable
+ERROR 2021-11-10 14:44:50,388 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 500 98761
+INFO 2021-11-10 14:45:30,761 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-10 14:45:33,558 views 70 module 'django.middleware.http' has no attribute 'JsonResponse'
+INFO 2021-11-10 14:45:33,559 basehttp 154 "GET /oauth_callback/?code=D177559D14D7292308BB1B3A102EBA87 HTTP/1.1" 200 106
+INFO 2021-11-10 14:45:33,584 basehttp 154 "GET /image_codes/70680802-f0dd-4523-9d81-428b0666fbe3/ HTTP/1.1" 200 3266
+ERROR 2021-11-10 14:45:44,332 views 70 module 'django.middleware.http' has no attribute 'JsonResponse'
+INFO 2021-11-10 14:45:44,332 basehttp 154 "GET /oauth_callback/?code=6E2F06441D2B1CE69DFB48178F99A3DE HTTP/1.1" 200 106
+INFO 2021-11-10 14:45:44,350 basehttp 154 "GET /image_codes/a1a0e22c-6116-4e77-a3e2-d2ed3ea7ea1f/ HTTP/1.1" 200 3068
+INFO 2021-11-10 14:45:59,313 views 62 短信验证码是：571843
+INFO 2021-11-10 14:45:59,329 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=fwal&uuid=a1a0e22c-6116-4e77-a3e2-d2ed3ea7ea1f HTTP/1.1" 200 61
+INFO 2021-11-10 14:46:14,585 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 14:46:14,588 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 69
+INFO 2021-11-10 14:46:23,298 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2021-11-10 14:46:23,315 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 51
+INFO 2021-11-10 14:46:25,272 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-10 14:46:28,061 views 70 module 'django.middleware.http' has no attribute 'JsonResponse'
+INFO 2021-11-10 14:46:28,062 basehttp 154 "GET /oauth_callback/?code=5BBC770B730BA360A71A3D708C707421 HTTP/1.1" 200 106
+INFO 2021-11-10 14:46:28,086 basehttp 154 "GET /image_codes/98a30d4d-9beb-48d1-8e2f-a12126d579b4/ HTTP/1.1" 200 3251
+ERROR 2021-11-10 14:46:37,522 views 70 module 'django.middleware.http' has no attribute 'JsonResponse'
+INFO 2021-11-10 14:46:37,523 basehttp 154 "GET /oauth_callback/?code=D72155F3D756E0F6E9BBFD7BDFF0775E HTTP/1.1" 200 106
+INFO 2021-11-10 14:46:37,542 basehttp 154 "GET /image_codes/8a1b89d7-6337-495c-8b37-41d9dd8a14f9/ HTTP/1.1" 200 3033
+ERROR 2021-11-10 14:52:48,502 views 70 module 'django.middleware.http' has no attribute 'JsonResponse'
+INFO 2021-11-10 14:52:48,503 basehttp 154 "GET /oauth_callback/?code=1BF671FB768A452498BE41202D0EBC1F HTTP/1.1" 200 106
+INFO 2021-11-10 14:52:48,531 basehttp 154 "GET /image_codes/c3a43bbe-8e96-456b-9b43-6863d0f31af5/ HTTP/1.1" 200 3004
+INFO 2021-11-10 14:54:08,752 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:54:19,163 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-10 14:54:57,954 views 70 module 'django.middleware.http' has no attribute 'JsonResponse'
+INFO 2021-11-10 14:55:18,272 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:55:28,938 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 14:58:02,825 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 14:58:23,110 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-10 14:58:27,878 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 67, in get
+    response.set_cookie('username', qquser.user.nick_name)
+UnboundLocalError: local variable 'response' referenced before assignment
+ERROR 2021-11-10 14:58:27,879 basehttp 154 "GET /oauth_callback/?code=39232B0255E89D73A624E4C4AFFA3470 HTTP/1.1" 500 83472
+INFO 2021-11-10 14:59:53,476 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 15:00:00,267 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 15:00:05,427 basehttp 154 "GET /oauth_callback/?code=1591B875791E2A01024B134CC1F33CDA HTTP/1.1" 200 27
+INFO 2021-11-10 15:01:05,380 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2021-11-10 15:01:05,407 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 51
+INFO 2021-11-10 15:01:07,328 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 15:01:12,378 basehttp 154 "GET /oauth_callback/?code=9CE5F696572359107DFA97BE0B24F930 HTTP/1.1" 200 27
