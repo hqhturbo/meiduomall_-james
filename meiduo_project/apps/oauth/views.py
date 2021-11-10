@@ -125,3 +125,4 @@ class QQOauthView(View):
         response = JsonResponse({'code': 0, 'errmsg': 'ok'})
         response.set_cookie('username', json.dumps(user.username))
         return response
+

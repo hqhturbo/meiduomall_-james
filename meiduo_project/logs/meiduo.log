@@ -6174,3 +6174,373 @@ INFO 2021-11-10 15:01:05,380 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
 INFO 2021-11-10 15:01:05,407 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 51
 INFO 2021-11-10 15:01:07,328 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
 INFO 2021-11-10 15:01:12,378 basehttp 154 "GET /oauth_callback/?code=9CE5F696572359107DFA97BE0B24F930 HTTP/1.1" 200 27
+INFO 2021-11-10 15:52:25,740 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 15:52:40,522 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+ERROR 2021-11-10 15:52:43,277 log 228 Internal Server Error: /oauth_callback/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 164, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\book\源码\venv\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\book\源码\venv\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\book\源码\venv\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\book\源码\venv\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tb_users.nick_name' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\oauth\views.py", line 62, in get
+    user = oauth_qq.user
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 178, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 145, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "D:\book\源码\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\book\源码\venv\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "D:\book\源码\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\book\源码\venv\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\book\源码\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\book\源码\venv\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\book\源码\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\book\源码\venv\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\book\源码\venv\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\book\源码\venv\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\book\源码\venv\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\book\源码\venv\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'tb_users.nick_name' in 'field list'")
+ERROR 2021-11-10 15:52:43,288 basehttp 154 "GET /oauth_callback/?code=37AC6E33218153A517F7EC12789FD016 HTTP/1.1" 500 231206
+INFO 2021-11-10 15:53:24,909 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 15:53:28,338 views 47 access_token获取失败
+INFO 2021-11-10 15:53:28,338 basehttp 154 "GET /oauth_callback/?code=37AC6E33218153A517F7EC12789FD016 HTTP/1.1" 200 106
+INFO 2021-11-10 15:53:28,370 basehttp 154 "GET /image_codes/e97f339a-560b-491a-9e35-b0f66d36df80/ HTTP/1.1" 200 3083
+INFO 2021-11-10 15:53:34,169 basehttp 154 "GET /image_codes/7b53660f-0c2a-45e3-af84-6516687cc79a/ HTTP/1.1" 200 3196
+INFO 2021-11-10 15:53:36,955 basehttp 154 "GET /usernames/aaaaa/count/ HTTP/1.1" 200 41
+INFO 2021-11-10 15:53:45,804 basehttp 154 "GET /mobiles/15592155630/count/ HTTP/1.1" 200 41
+INFO 2021-11-10 15:53:46,338 basehttp 154 "GET /mobiles/15592155630/count/ HTTP/1.1" 200 41
+INFO 2021-11-10 15:53:50,678 views 62 短信验证码是：491173
+INFO 2021-11-10 15:53:50,680 basehttp 154 "GET /mobiles/15592155630/count/ HTTP/1.1" 200 41
+INFO 2021-11-10 15:53:50,802 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=ag64&uuid=7b53660f-0c2a-45e3-af84-6516687cc79a HTTP/1.1" 200 61
+INFO 2021-11-10 15:53:58,521 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2021-11-10 15:53:58,727 basehttp 154 "POST /register/ HTTP/1.1" 200 51
+INFO 2021-11-10 15:54:03,862 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 15:54:06,345 basehttp 154 "GET /oauth_callback/?code=6DE3E33E2ED73A3C3098C8C16EA1FCA2 HTTP/1.1" 200 247
+INFO 2021-11-10 15:54:06,366 basehttp 154 "GET /image_codes/548b1009-827c-4d11-9834-10246bc07a66/ HTTP/1.1" 200 3229
+INFO 2021-11-10 15:54:15,957 basehttp 154 "GET /sms_codes/?mobile=15592155630&image_code=yvrz&uuid=548b1009-827c-4d11-9834-10246bc07a66 HTTP/1.1" 200 75
+INFO 2021-11-10 15:54:24,381 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2021-11-10 15:54:24,590 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 27
+INFO 2021-11-10 15:55:04,533 basehttp 154 "GET /info/ HTTP/1.1" 200 148
+INFO 2021-11-10 15:55:07,596 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2021-11-10 15:55:07,602 log 228 Not Found: /emails/
+WARNING 2021-11-10 15:55:07,603 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 15:55:11,421 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2021-11-10 15:55:11,441 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 51
+INFO 2021-11-10 15:55:12,526 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 15:55:14,974 basehttp 154 "GET /oauth_callback/?code=0C2DC987F21E6CCCF771FD4D284EED3D HTTP/1.1" 200 27
+INFO 2021-11-10 16:03:22,703 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\models.py changed, reloading.
+INFO 2021-11-10 16:03:23,352 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:03:35,819 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\models.py changed, reloading.
+INFO 2021-11-10 16:03:36,520 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:03:59,942 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\models.py changed, reloading.
+INFO 2021-11-10 16:04:00,650 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:05:07,482 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:05:10,686 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 16:05:13,752 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:05:13,753 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 16:07:30,795 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-10 16:07:37,556 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:07:37,556 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 16:07:39,445 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:07:39,446 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 16:08:01,818 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:09:26,892 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 16:09:29,615 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:09:29,616 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 16:09:37,387 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:09:37,387 basehttp 154 "GET /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 16:09:37,484 log 228 Not Found: /favicon.ico
+WARNING 2021-11-10 16:09:37,484 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3612
+INFO 2021-11-10 16:10:18,146 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2021-11-10 16:10:18,151 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:10:18,152 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 16:10:46,990 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-10 16:10:47,622 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:10:48,112 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2021-11-10 16:10:48,133 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:10:48,133 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 16:11:30,801 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\urls.py changed, reloading.
+INFO 2021-11-10 16:11:31,382 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:49:55,242 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\meiduo_project\settings.py changed, reloading.
+INFO 2021-11-10 16:49:55,961 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:50:35,839 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 16:50:52,924 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 16:50:56,138 basehttp 154 "GET /oauth_callback/?code=B58757B75304ADB9ACF85D9507E61ED0 HTTP/1.1" 200 27
+INFO 2021-11-10 16:50:57,552 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+INFO 2021-11-10 16:51:00,264 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2021-11-10 16:51:00,271 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:51:00,271 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 16:53:01,584 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-10 16:53:05,154 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:53:05,155 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 16:53:07,178 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 16:53:11,925 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:53:11,925 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 16:53:25,614 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:53:25,615 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 16:53:28,140 log 228 Not Found: /emails/
+WARNING 2021-11-10 16:53:28,140 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 16:53:49,159 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\meiduo_project\settings.py changed, reloading.
+INFO 2021-11-10 16:53:49,845 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:01:32,238 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\meiduo_project\settings.py changed, reloading.
+INFO 2021-11-10 17:01:32,892 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:03:52,872 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\meiduo_project\urls.py changed, reloading.
+INFO 2021-11-10 17:03:53,410 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:08:49,863 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:09:01,282 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:10:04,116 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\areas\urls.py changed, reloading.
+INFO 2021-11-10 17:10:04,767 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:13:55,517 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:14:40,118 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:15:09,593 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 17:15:12,129 basehttp 154 "GET /oauth_callback/?code=E652174787F4B1F6B4F0AD690DF64978 HTTP/1.1" 200 27
+INFO 2021-11-10 17:15:42,467 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:15:50,738 basehttp 154 "GET /oauth_callback/?code=5FFC309EDB38BBDCDB7A6B63A70382A3 HTTP/1.1" 200 27
+WARNING 2021-11-10 17:16:11,400 log 228 Not Found: /
+WARNING 2021-11-10 17:16:11,401 basehttp 154 "GET / HTTP/1.1" 404 3561
+WARNING 2021-11-10 17:16:11,485 log 228 Not Found: /favicon.ico
+WARNING 2021-11-10 17:16:11,486 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3612
+INFO 2021-11-10 17:16:50,481 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:16:59,061 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:17:23,222 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-10 17:17:34,937 log 228 Not Found: /
+WARNING 2021-11-10 17:17:34,938 basehttp 154 "GET / HTTP/1.1" 404 3561
+INFO 2021-11-10 17:18:47,047 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:19:02,108 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 17:19:04,767 basehttp 154 "GET /oauth_callback/?code=AE937022EB733B937AAC3F6B9391C47F HTTP/1.1" 200 27
+INFO 2021-11-10 17:19:06,190 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+INFO 2021-11-10 17:19:45,223 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:20:37,954 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:20:46,706 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:22:20,143 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-10 17:22:20,720 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:23:12,522 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:24:23,721 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:25:11,918 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:25:19,913 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:30:10,879 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\meiduo_project\settings.py changed, reloading.
+INFO 2021-11-10 17:30:11,462 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:31:14,918 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:33:04,087 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\celery_tasks\main.py changed, reloading.
+INFO 2021-11-10 17:33:04,673 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:33:49,111 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+INFO 2021-11-10 17:34:39,943 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2021-11-10 17:34:39,951 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:34:39,951 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:38:11,970 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-10 17:38:14,720 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:38:14,720 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 17:38:17,498 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:38:17,498 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:38:18,937 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 17:38:22,276 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:38:22,277 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 17:39:33,932 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:39:33,933 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:39:35,613 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 17:39:39,706 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:39:39,706 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:41:01,230 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:41:08,423 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 17:41:12,647 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:41:12,647 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 17:42:28,893 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:42:28,894 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:42:30,355 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 17:42:32,787 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:42:32,787 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:42:34,069 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+INFO 2021-11-10 17:42:38,265 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 17:42:41,684 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:42:41,684 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:42:48,872 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-10 17:42:50,720 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:42:50,720 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:42:55,796 basehttp 154 "GET /oauth_callback/?code=90ACC1C0F32B10022354E6E95083FC31 HTTP/1.1" 200 27
+INFO 2021-11-10 17:42:57,128 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2021-11-10 17:42:59,883 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:42:59,883 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+INFO 2021-11-10 17:43:05,080 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+INFO 2021-11-10 17:43:14,803 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2021-11-10 17:43:14,811 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:43:14,811 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3600
+WARNING 2021-11-10 17:43:47,525 log 228 Not Found: /
+WARNING 2021-11-10 17:43:47,525 basehttp 154 "GET / HTTP/1.1" 404 3561
+WARNING 2021-11-10 17:43:47,617 log 228 Not Found: /favicon.ico
+WARNING 2021-11-10 17:43:47,617 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 3612
+INFO 2021-11-10 17:45:11,979 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:45:15,325 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-10 17:45:18,023 basehttp 154 "GET /oauth_callback/?code=1039839AA586DC750BB22EE2F5C0D1A5 HTTP/1.1" 200 27
+INFO 2021-11-10 17:45:19,583 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+INFO 2021-11-10 17:45:22,515 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+WARNING 2021-11-10 17:45:22,520 log 228 Not Found: /emails/
+WARNING 2021-11-10 17:45:22,520 basehttp 154 "PUT /emails/ HTTP/1.1" 404 3753
+INFO 2021-11-10 17:45:48,624 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:45:57,493 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-11-10 17:46:01,038 log 228 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 172, in put
+    token = generic_email_verify_token(request.user.id)
+NameError: name 'generic_email_verify_token' is not defined
+ERROR 2021-11-10 17:46:01,040 basehttp 154 "PUT /emails/ HTTP/1.1" 500 82205
+INFO 2021-11-10 17:46:03,090 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+INFO 2021-11-10 17:47:20,193 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\meiduo_project\settings.py changed, reloading.
+INFO 2021-11-10 17:47:20,771 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:54:05,347 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\celery_tasks\main.py changed, reloading.
+INFO 2021-11-10 17:54:05,940 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:54:10,149 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:54:20,836 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+ERROR 2021-11-10 17:54:21,873 log 228 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 172, in put
+    token = generic_email_verify_token(request.user.id)
+NameError: name 'generic_email_verify_token' is not defined
+ERROR 2021-11-10 17:54:21,874 basehttp 154 "PUT /emails/ HTTP/1.1" 500 82382
+INFO 2021-11-10 17:55:19,620 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:55:36,145 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:55:40,115 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+ERROR 2021-11-10 17:55:41,257 log 228 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 173, in put
+    verify_url = f"{EMAIL_VERIFY_URL}?token={token}"
+NameError: name 'EMAIL_VERIFY_URL' is not defined
+ERROR 2021-11-10 17:55:41,258 basehttp 154 "PUT /emails/ HTTP/1.1" 500 82678
+INFO 2021-11-10 17:56:24,500 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:56:26,955 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+ERROR 2021-11-10 17:56:28,498 log 228 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 179, in put
+    send_mail(subject='美多商城激活邮件',message='',from_email=EMAIL_FROM,recipient_list=[email],html_message=html_message)
+NameError: name 'send_mail' is not defined
+ERROR 2021-11-10 17:56:28,500 basehttp 154 "PUT /emails/ HTTP/1.1" 500 83487
+INFO 2021-11-10 17:57:39,795 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:57:41,846 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+INFO 2021-11-10 17:57:42,114 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+ERROR 2021-11-10 17:57:43,058 log 228 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 180, in put
+    send_mail(subject='美多商城激活邮件',message='',from_email=EMAIL_FROM,recipient_list=[email],html_message=html_message)
+NameError: name 'EMAIL_FROM' is not defined
+ERROR 2021-11-10 17:57:43,059 basehttp 154 "PUT /emails/ HTTP/1.1" 500 83683
+INFO 2021-11-10 17:58:16,109 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-10 17:58:18,622 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+INFO 2021-11-10 17:58:23,621 basehttp 154 "PUT /emails/ HTTP/1.1" 200 61

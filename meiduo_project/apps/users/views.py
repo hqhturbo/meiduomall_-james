@@ -4,7 +4,7 @@ from django_redis import get_redis_connection
 from apps.users.models import User
 import json, re
 from django.contrib.auth import authenticate, logout, login
-
+from apps.users.utils import generic_email_verify_token
 import logging
 
 logger = logging.getLogger('django')
@@ -140,15 +140,43 @@ class LogoutView(View):
 
 
 from utils.view_extend import *
-class UserInfoView(LoginRequiredJsonMixin,View):
-    def get(self,request):
-        return JsonResponse({
-            'code':0,
-            'errmsg':'个人中心',
-            "info_data":{
-                "username":"itcast",
-                "mobile":"15592155630",
-                "email":"",
-                "email_active":'true'
+class UserInfoView(LoginRequiredJsonMixin, View):
+    def get(self, request):
+        user = request.user
+        if user is None:
+            return JsonResponse({"code": 400, "errmsg": "未找到该用户信息"})
+        else:
+            user_info = {
+                'username': user.nick_name,
+                'mobile': user.mobile,
+                'email': user.email,
+                'email_active': user.email_active
             }
-        })
+            return JsonResponse({"code": 200, "errmsg": "ok", "info_data": user_info})
+
+
+class EmailView(View):
+    def put(self, request):
+        json_dict = json.loads(request.body.decode())
+        email = json_dict.get('email')
+        if not email:
+            return JsonResponse({'code': 400, 'errmsg':'缺少email参数'})
+        if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+            return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+        try:
+            request.user.email =email
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '添加邮箱失败'})
+        token = generic_email_verify_token(request.user.id)
+        from meiduo_project.settings import EMAIL_VERIFY_URL
+        verify_url = f"{EMAIL_VERIFY_URL}?token={token}"
+        html_message = '<p>尊敬的用户您好</p>' \
+                       '<p>感谢你使用美多商城</p>' \
+                       '<p>你的邮箱威：%s。请点击此链接激活你的邮箱,</p>' \
+                       '<p><a href="%s">%s</a></p>' % (email, verify_url, verify_url)
+        from meiduo_project.settings import EMAIL_FROM
+        from django.core.mail import send_mail
+        send_mail(subject='美多商城激活邮件',message='',from_email=EMAIL_FROM,recipient_list=[email],html_message=html_message)
+        return JsonResponse({'code': 0, 'errmsg':'添加邮箱成功'})

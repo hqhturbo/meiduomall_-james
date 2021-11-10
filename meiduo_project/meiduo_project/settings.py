@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.users',
     'apps.verification',
-    'apps.oauth'
+    'apps.oauth',
+    # 'apps.areas'
 
 ]
 
@@ -205,6 +206,25 @@ QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
 QQ_STATE = 'meiduosite'
 
 
+# 邮箱验证链接
+EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html'
+
+# 邮件后端配置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# 与SMTP服务器通信的地址
+EMAIL_HOST = 'smtp.office365.com'
+# 与SMTP服务器通信使用的端口号
+EMAIL_PORT = 587
+# 与SMTP服务器登录的用户名
+EMAIL_HOST_USER = 'naonaosjx@outlook.com'
+# 与SMTP服务器登录的密码
+EMAIL_HOST_PASSWORD = 'sjx2002418'
+# 发件人地址
+EMAIL_FROM = '美多商城<naonaosjx@outlook.com>'
+
+# 与SMTP服务器通信使用的TLS加密方式
+EMAIL_USE_TLS = 'STARTTLS'
+
 # CORS
 CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8080',
@@ -214,6 +234,7 @@ CORS_ORIGIN_WHITELIST = (
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 AUTH_USER_MODEL = 'users.User'
+
 
 CELERY_BROKER_URL="redis://:123456@127.0.0.1/3"
 CELERY_RESULT_BACKEND="redis://:123456@127.0.0.1/4"
