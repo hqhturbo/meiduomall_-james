@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'apps.users',
-    'apps.verification'
+    'apps.verification',
+    'apps.oauth',
+    'apps.areas'
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -208,3 +210,32 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 CELERY_BROKER_URL="redis://:123456@127.0.0.1/2"
 CELERY_RESULT_BACKEND="redis://:123456@127.0.0.1/1"
+
+# QQ登录参数
+# 我们申请的 客户端id
+QQ_CLIENT_ID ='101474184'
+# 我们申请的 客户端秘钥
+QQ_CLIENT_SECRET ='c6ce949e04e12ecc909ae6a8b09b637c'
+# 我们申请时添加的: 登录成功后回调的路径
+QQ_REDIRECT_URI ='http://www.meiduo.site:8080/oauth_callback.html'
+QQ_STATE ='meiduosite'
+
+# 邮件后端配置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# 与SMTP服务器通信的地址
+EMAIL_HOST = 'smtp.qq.com'
+# 与SMTP服务器通信使用的端口号
+EMAIL_PORT = 25
+# 与SMTP服务器登录的用户名
+EMAIL_HOST_USER = '3013641862@qq.com'
+# 与SMTP服务器登录的密码
+EMAIL_HOST_PASSWORD = 'fotlepldnoyidfdf'
+# 发件人地址
+EMAIL_FROM = '3013641862@qq.com'
+
+# 与SMTP服务器通信使用的TLS加密方式
+EMAIL_USE_TLS = 'STARTTLS'
+EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html'
+# pwhugqgmmwcfdefc
+# exqhaehxtmcsdfae
+# igwcbpdhfsssdebi

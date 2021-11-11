@@ -15,5 +15,21 @@ urlpatterns = [
     #登录路由
     path('login/', LoginView.as_view()),
 
-    path('logout/', LogoutView.as_view())
+    path('logout/', LogoutView.as_view()),
+
+    path('info/', UserInfoView.as_view()),
+
+    path('emails/', EmailView.as_view()),
+
+    path('emails/verification/', EmailVerifyView.as_view()),
+
+    path('addresses/', AddressView.as_view()),
+
+    path('addresses/<address_id>/', AddressView.as_view()),
+
+    path('addresses/<address_id>/default/', AddressDefaultView.as_view()),
+
+    path('addresses/<address_id>/title/', UpdateTitleAddressView.as_view()),
+
+    path('password/',ChangePasswordView.as_view())
 ]
