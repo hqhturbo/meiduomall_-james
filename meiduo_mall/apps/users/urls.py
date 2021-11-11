@@ -19,4 +19,6 @@ urlpatterns = [
     path('info/',UserInfoView.as_view()),
     path('usernames/<username>/count/',UsernameCountView.as_view()),
     path('mobile/<mobile>/count/',MobileCountView.as_view()),
+    path('emails/verification/', EmailVerifyView.as_view()),
+    path('addresses/', CreateAddressViwe.as_view()),
 ]

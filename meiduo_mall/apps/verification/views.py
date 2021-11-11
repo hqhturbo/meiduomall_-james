@@ -5,12 +5,17 @@ from django.http import JsonResponse, HttpResponse
 from libs.captcha.captcha import captcha  #导入图片验证码库
 from django_redis import get_redis_connection #导入redis包
 from celery_tasks.sms.tasks import send_sms_code
+import json,re
+from celery_tasks.email.tasks import send_mail
+from apps.users.utils import generic_email_verify_token
 # from libs.yuntongxun.sms import CCP
 # Create your views here.
 
 # 1 导入系统logging
 import logging
 # 2 创建日志署
+from meiduo_mall.settings import EMAIL_FROM, EMAIL_VERIFY_URL
+
 logger = logging.getLogger('django')
 
 # 图片验证码
@@ -61,3 +66,31 @@ class SmscodeView(View):
         # 调用发送短信验证码函数
         send_sms_code.delay(mobile, sms_code)
         return JsonResponse({'code':200,'errmsg':'验证码发送成功'})
+
+class EmailView(View):
+    '''添加邮箱'''
+    def put(self,request):
+        # 接收参数
+        json_dict = json.loads(request.body.decode())
+        email = json_dict.get('email')
+        if not email:
+            return JsonResponse({'code': 400, 'errmsg':'缺少email参数'})
+        if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$',email):
+            return JsonResponse({'code': 400, 'errmsg':'参数email有误'})
+
+        # 赋值email字段
+        try:
+            request.user.email = email
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg':'添加邮箱失败'})
+        token = generic_email_verify_token(request.user.id) # 生成邮箱验证token
+        verif_url = f"{EMAIL_VERIFY_URL}?token={token}"   # 拼接验证邮箱地址
+        html_message = '<p>尊敬的用户您好！</p>' \
+                       '<p>感谢您使用美多商城，</p>' \
+                       '<p>您的邮箱为 %s ，请点击此链接激活您的邮箱，</p>' \
+                       '<p><a href="%s">%s<a></p>' % (email,verif_url,verif_url)
+            # 响应添加邮箱结果
+        send_mail(subject='美多商城激活邮件',message='',from_email=EMAIL_FROM,recipient_list=[email],html_message=html_message)
+        return JsonResponse({'code':0, 'errmsg':'添加邮箱成功'})

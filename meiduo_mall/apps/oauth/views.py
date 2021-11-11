@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views import View
 from django import http
 from django_redis import get_redis_connection
@@ -44,7 +43,7 @@ class QQLoginURLView(View):
                      state=settings.QQ_STATE
                      )
         qq_login_url = qq.get_qq_url()
-        print(qq_login_url)
+        # print(qq_login_url)
         return JsonResponse({'code':0,'errmsg':'ok','login_url':qq_login_url})
 
 class QQOauthView(View):
@@ -60,11 +59,11 @@ class QQOauthView(View):
                         client_secret = settings.QQ_CLIENT_SECRET,
                         redirect_uri=settings.QQ_REDIRECT_URI,
                         state=settings.QQ_STATE)
-        print(oauth)
+        # print(oauth)
         try:
             # 使用code向QQ服务器发送access_token
             access_token = oauth.get_access_token(code)
-            print(access_token)
+            # print(access_token)
             # 使用access_token向QQ服务器请求openid
             openid = oauth.get_open_id(access_token)
         except Exception as e:
@@ -102,7 +101,7 @@ class QQOauthView(View):
         sms_code = data.get('sms_code')
         access_token = data.get('access_token')
 
-        print(mobile,password,sms_code,access_token)
+        # print(mobile,password,sms_code,access_token)
         # 判断手机号是否合法
         if not re.match(r'^1[3-9]\d{9}$',mobile):
             return JsonResponse({'code':400,'errmsg':'手机号码格式错误'})
@@ -142,6 +141,7 @@ class QQOauthView(View):
             if not user.check_password(password):
                 return JsonResponse({'code': 400, 'errmsg':'账号或密码错误'})
         # 将用户信息和openid进行绑定写入表中
+        openid = openid.get('openid')
         OAuthQQUser.objects.create(user=user, openid=openid)
 
         #状态保持

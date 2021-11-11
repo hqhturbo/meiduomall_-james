@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'apps.users.apps.UsersConfig',
     'apps.verification',
     'apps.oauth',
+    'apps.areas'
 ]
 
 MIDDLEWARE = [
@@ -213,4 +214,21 @@ QQ_CLIENT_SECRET ='c6ce949e04e12ecc909ae6a8b09b637c'
 # 我们申请时添加的: 登录成功后回调的路径
 QQ_REDIRECT_URI ='http://www.meiduo.site:8080/oauth_callback.html'
 QQ_STATE ='meiduosite'
+
+# 邮件后端配置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# 与SMTP服务器通信的地址
+EMAIL_HOST = 'smtp.office365.com'
+# 与SMTP服务器通信使用的端口号
+EMAIL_PORT = 587
+# 与SMTP服务器登录的用户名
+EMAIL_HOST_USER = 'turboyuhui@outlook.com'
+# 与SMTP服务器登录的密码
+EMAIL_HOST_PASSWORD = 'huiqihang.0207'
+# 发件人地址
+EMAIL_FROM = 'turbo<turboyuhui@outlook.com>'
+# 与SMTP服务器通信使用的TLS加密方式
+EMAIL_USE_TLS = 'STARTTLS'
+
+EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html'
 

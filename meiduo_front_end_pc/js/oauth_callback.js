@@ -2,7 +2,7 @@ var app = new Vue({
     el:'#app',
     data:{
         host,
-        is_show_waiting:'',
+        is_show_waiting:true,
         access_token:'',
         mobile:'',
         error_phone:false,
@@ -32,9 +32,13 @@ var app = new Vue({
                     location.href = '/index.html'
                 }else{
                     this.access_token=asg.data.access_token
-                    console.log(this.access_token)
+                    // console.log(this.access_token)
+                    this.is_show_waiting = false
                 }
-
+            })
+            .catch(error => {
+                console.log(error.response.data);
+                alert('服务器异常');
             })
     },
 
@@ -148,7 +152,7 @@ var app = new Vue({
         on_submit:function () {
             this.check_phone();
             this.check_pwd();
-            this.check_image_code();
+            // this.check_image_code();
             this.check_sms_code();
 
             if (this.error_phone == false && this.error_password == false && this.error_image_code ==false
@@ -166,8 +170,13 @@ var app = new Vue({
                         if (asg.data.code == 0){
                             location.href = '/index.html'
                         }
-                        if (asg.data.code == 400){
-                            alert(asg.data.errmsg)
+                    })
+                    .catch(error=> {
+                        if (error.response.status == 400) {
+                            this.error_sms_code_message = error.response.data.message;
+                            this.error_sms_code = true;
+                        } else {
+                            console.log(error.response.data);
                         }
                     })
 
