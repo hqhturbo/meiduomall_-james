@@ -6544,3 +6544,1669 @@ ERROR 2021-11-10 17:57:43,059 basehttp 154 "PUT /emails/ HTTP/1.1" 500 83683
 INFO 2021-11-10 17:58:16,109 autoreload 578 Watching for file changes with StatReloader
 INFO 2021-11-10 17:58:18,622 basehttp 154 "GET /info/ HTTP/1.1" 200 168
 INFO 2021-11-10 17:58:23,621 basehttp 154 "PUT /emails/ HTTP/1.1" 200 61
+INFO 2021-11-11 14:32:41,974 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 14:32:52,890 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-11 14:32:55,443 basehttp 154 "GET /oauth_callback/?code=7B9FFE85BF106EA9A0D336E43C036AED HTTP/1.1" 200 27
+INFO 2021-11-11 14:32:57,315 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+INFO 2021-11-11 14:34:20,254 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-11 14:34:20,896 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 14:34:42,486 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 14:34:46,645 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2021-11-11 14:34:51,835 basehttp 154 "PUT /emails/ HTTP/1.1" 200 61
+INFO 2021-11-11 14:35:23,576 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-11 14:35:25,956 basehttp 154 "GET /oauth_callback/?code=D9CE3E9FA689095C9D72F5E1E5536FE5 HTTP/1.1" 200 27
+INFO 2021-11-11 14:35:27,455 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+INFO 2021-11-11 14:37:13,872 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2021-11-11 14:37:16,298 basehttp 154 "PUT /emails/ HTTP/1.1" 200 61
+INFO 2021-11-11 14:38:05,669 basehttp 154 "OPTIONS /emails/verification/ HTTP/1.1" 200 0
+INFO 2021-11-11 14:38:44,513 basehttp 154 "GET /info/ HTTP/1.1" 200 168
+INFO 2021-11-11 14:38:48,036 basehttp 154 "PUT /emails/ HTTP/1.1" 200 61
+INFO 2021-11-11 14:38:54,992 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTYzNjYxMjcyNSwiZXhwIjoxNjM2NjE0NTI1fQ.eyJ1c2VyX2lkIjoxfQ.CY2RVMPktguQxvoH8hwrREXUL_7Q1H8RhfZGHMYQvqjPe8oSWH1z7nlCWvY_lhgKFg1hvropYwkboKo7BpTyng HTTP/1.1" 200 0
+INFO 2021-11-11 14:38:54,999 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTYzNjYxMjcyNSwiZXhwIjoxNjM2NjE0NTI1fQ.eyJ1c2VyX2lkIjoxfQ.CY2RVMPktguQxvoH8hwrREXUL_7Q1H8RhfZGHMYQvqjPe8oSWH1z7nlCWvY_lhgKFg1hvropYwkboKo7BpTyng HTTP/1.1" 200 73
+INFO 2021-11-11 14:38:59,268 basehttp 154 "GET /info/ HTTP/1.1" 200 167
+INFO 2021-11-11 14:39:25,913 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2021-11-11 14:39:33,736 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 210
+INFO 2021-11-11 14:39:36,468 basehttp 154 "GET /oauth_callback/?code=471B77C2D04E36F79A3FFD80115BCB09 HTTP/1.1" 200 27
+INFO 2021-11-11 14:42:06,716 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\areas\urls.py changed, reloading.
+INFO 2021-11-11 14:42:07,325 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 14:42:40,326 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 14:44:05,926 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2021-11-11 14:44:47,007 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2021-11-11 14:44:49,628 basehttp 154 "PUT /emails/ HTTP/1.1" 200 61
+INFO 2021-11-11 14:44:51,054 basehttp 154 "PUT /emails/ HTTP/1.1" 200 61
+INFO 2021-11-11 14:45:32,156 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 14:45:34,612 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+WARNING 2021-11-11 14:49:15,421 log 228 Not Found: /addresses/
+WARNING 2021-11-11 14:49:15,423 log 228 Not Found: /areas/
+WARNING 2021-11-11 14:49:15,424 basehttp 154 "GET /addresses/ HTTP/1.1" 404 3930
+WARNING 2021-11-11 14:49:15,424 basehttp 154 "GET /areas/ HTTP/1.1" 404 3918
+INFO 2021-11-11 14:49:36,244 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-11 14:49:39,483 log 228 Not Found: /areas/
+WARNING 2021-11-11 14:49:39,484 log 228 Not Found: /addresses/
+WARNING 2021-11-11 14:49:39,485 basehttp 154 "GET /addresses/ HTTP/1.1" 404 3930
+WARNING 2021-11-11 14:49:39,485 basehttp 154 "GET /areas/ HTTP/1.1" 404 3918
+WARNING 2021-11-11 14:49:40,988 log 228 Not Found: /addresses/
+WARNING 2021-11-11 14:49:40,991 log 228 Not Found: /areas/
+WARNING 2021-11-11 14:49:40,992 basehttp 154 "GET /addresses/ HTTP/1.1" 404 3930
+WARNING 2021-11-11 14:49:40,992 basehttp 154 "GET /areas/ HTTP/1.1" 404 3918
+INFO 2021-11-11 15:11:00,517 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\models.py changed, reloading.
+INFO 2021-11-11 15:11:01,111 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:11:25,682 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\models.py changed, reloading.
+INFO 2021-11-11 15:11:26,243 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:12:36,603 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-11 15:12:37,174 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:12:58,041 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:16:34,989 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:18:24,218 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:18:46,653 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:19:01,046 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:19:36,133 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:19:48,906 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-11 15:19:55,847 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:19:55,849 basehttp 154 "GET /areas/ HTTP/1.1" 404 4075
+WARNING 2021-11-11 15:19:55,852 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:19:55,854 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:19:55,854 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:19:59,406 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:19:59,408 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:19:59,409 basehttp 154 "GET /areas/ HTTP/1.1" 404 4075
+WARNING 2021-11-11 15:19:59,410 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:19:59,410 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:22:28,547 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-11 15:22:30,795 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:22:30,798 basehttp 154 "GET /areas/ HTTP/1.1" 404 4391
+WARNING 2021-11-11 15:22:30,803 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:22:30,804 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:22:30,805 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:22:31,515 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:22:31,516 basehttp 154 "GET /areas/ HTTP/1.1" 404 4391
+WARNING 2021-11-11 15:22:31,518 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:22:31,519 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:22:31,519 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:22:35,412 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:22:35,413 basehttp 154 "GET /areas/ HTTP/1.1" 404 4391
+WARNING 2021-11-11 15:22:35,415 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:22:35,416 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:22:35,416 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:22:35,993 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:22:35,995 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:22:35,996 basehttp 154 "GET /areas/ HTTP/1.1" 404 4391
+WARNING 2021-11-11 15:22:35,997 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:22:35,997 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:22:36,516 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:22:36,517 basehttp 154 "GET /areas/ HTTP/1.1" 404 4391
+WARNING 2021-11-11 15:22:36,518 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:22:36,519 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:22:36,520 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:22:36,749 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:22:36,750 basehttp 154 "GET /areas/ HTTP/1.1" 404 4391
+WARNING 2021-11-11 15:22:36,751 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:22:36,752 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:22:36,752 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:22:36,941 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:22:36,943 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:22:36,944 basehttp 154 "GET /areas/ HTTP/1.1" 404 4391
+WARNING 2021-11-11 15:22:36,945 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:22:36,945 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:22:37,132 log 228 Not Found: /areas/
+WARNING 2021-11-11 15:22:37,133 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:22:37,134 basehttp 154 "GET /areas/ HTTP/1.1" 404 4391
+WARNING 2021-11-11 15:22:37,135 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:22:37,135 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:23:30,023 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:23:33,651 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:23:33,654 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:23:33,657 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:23:33,657 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:24:15,696 log 228 Not Found: /areas/220000/
+WARNING 2021-11-11 15:24:15,696 basehttp 154 "GET /areas/220000/ HTTP/1.1" 404 4405
+WARNING 2021-11-11 15:24:19,195 log 228 Not Found: /areas/110000/
+WARNING 2021-11-11 15:24:19,196 basehttp 154 "GET /areas/110000/ HTTP/1.1" 404 4405
+WARNING 2021-11-11 15:24:37,466 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:24:37,468 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:24:37,469 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:24:37,475 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:24:38,405 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:24:38,408 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:24:38,409 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:24:38,428 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:24:41,646 log 228 Not Found: /areas/110000/
+WARNING 2021-11-11 15:24:41,646 basehttp 154 "GET /areas/110000/ HTTP/1.1" 404 4405
+INFO 2021-11-11 15:27:52,505 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:27:56,363 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:27:56,375 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:27:56,381 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:27:56,382 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:28:00,252 log 228 Not Found: /areas/120000/
+WARNING 2021-11-11 15:28:00,253 basehttp 154 "GET /areas/120000/ HTTP/1.1" 404 4405
+WARNING 2021-11-11 15:28:03,302 log 228 Not Found: /areas/210000/
+WARNING 2021-11-11 15:28:03,303 basehttp 154 "GET /areas/210000/ HTTP/1.1" 404 4405
+INFO 2021-11-11 15:28:28,150 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\areas\views.py changed, reloading.
+INFO 2021-11-11 15:28:28,705 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:29:38,151 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\areas\views.py changed, reloading.
+INFO 2021-11-11 15:29:38,722 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:29:50,114 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-11 15:29:53,350 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:29:53,353 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:29:53,354 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+ERROR 2021-11-11 15:29:53,375 log 228 Internal Server Error: /areas/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\areas\views.py", line 58, in get
+    cache.set('province', province_list, 24 * 3600)
+AttributeError: 'dict' object has no attribute 'set'
+ERROR 2021-11-11 15:29:53,377 basehttp 154 "GET /areas/ HTTP/1.1" 500 84798
+INFO 2021-11-11 15:30:11,463 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\areas\views.py changed, reloading.
+INFO 2021-11-11 15:30:12,018 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:30:40,830 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-11 15:30:43,562 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:30:43,566 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:30:43,567 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:30:43,581 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-11-11 15:30:44,271 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:30:44,274 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:30:44,276 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:30:44,276 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:30:55,470 log 228 Not Found: /areas/140000/
+WARNING 2021-11-11 15:30:55,471 basehttp 154 "GET /areas/140000/ HTTP/1.1" 404 4405
+WARNING 2021-11-11 15:31:13,755 log 228 Not Found: /areas/110000/
+WARNING 2021-11-11 15:31:13,756 basehttp 154 "GET /areas/110000/ HTTP/1.1" 404 4405
+INFO 2021-11-11 15:32:28,193 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:32:28,196 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:32:28,197 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:32:28,197 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:32:28,567 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:32:28,571 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:32:28,572 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:32:28,573 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:32:28,777 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:32:28,780 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:32:28,782 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:32:28,783 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:32:28,979 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:32:28,982 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:32:28,985 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:32:28,987 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:32:29,501 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 15:32:30,863 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:32:30,866 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:32:30,867 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:32:30,868 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:32:32,862 log 228 Not Found: /areas/130000/
+WARNING 2021-11-11 15:32:32,862 basehttp 154 "GET /areas/130000/ HTTP/1.1" 404 4405
+INFO 2021-11-11 15:33:59,762 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:33:59,767 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:33:59,769 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:33:59,772 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:34:15,227 log 228 Not Found: /
+WARNING 2021-11-11 15:34:15,228 basehttp 154 "GET / HTTP/1.1" 404 4348
+WARNING 2021-11-11 15:34:15,329 log 228 Not Found: /favicon.ico
+WARNING 2021-11-11 15:34:15,330 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 4399
+INFO 2021-11-11 15:34:24,795 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 15:34:26,177 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:34:26,180 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:34:26,181 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:34:26,181 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+WARNING 2021-11-11 15:34:28,965 log 228 Not Found: /areas/120000/
+WARNING 2021-11-11 15:34:28,965 basehttp 154 "GET /areas/120000/ HTTP/1.1" 404 4405
+INFO 2021-11-11 15:35:32,661 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:35:32,665 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:35:32,669 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:35:32,669 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:36:48,531 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 15:36:48,536 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 15:36:48,538 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 15:36:48,540 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 15:37:45,289 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-11 15:37:45,995 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:38:21,513 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 15:38:34,182 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-11 15:38:34,737 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-11-11 15:38:37,147 log 228 Not Found: /
+WARNING 2021-11-11 15:38:37,148 basehttp 154 "GET / HTTP/1.1" 404 4498
+WARNING 2021-11-11 15:38:37,289 log 228 Not Found: /favicon.ico
+WARNING 2021-11-11 15:38:37,289 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 4549
+INFO 2021-11-11 15:38:54,786 basehttp 154 "OPTIONS /password/ HTTP/1.1" 200 0
+INFO 2021-11-11 15:38:55,188 basehttp 154 "PUT /password/ HTTP/1.1" 200 27
+INFO 2021-11-11 15:39:03,758 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-11-11 15:39:03,980 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-11-11 15:39:10,770 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 15:39:26,343 basehttp 154 "OPTIONS /password/ HTTP/1.1" 200 0
+INFO 2021-11-11 15:39:26,718 basehttp 154 "PUT /password/ HTTP/1.1" 200 27
+INFO 2021-11-11 15:39:34,471 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2021-11-11 15:39:34,684 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2021-11-11 15:39:49,014 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 16:10:00,252 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:10:04,345 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:10:04,352 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:10:04,358 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:10:04,359 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+ERROR 2021-11-11 16:10:06,271 log 228 Internal Server Error: /areas/130000/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'id'
+ERROR 2021-11-11 16:10:06,273 basehttp 154 "GET /areas/130000/ HTTP/1.1" 500 78244
+INFO 2021-11-11 16:10:08,081 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:10:08,085 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:10:08,087 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:10:08,087 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+ERROR 2021-11-11 16:10:10,628 log 228 Internal Server Error: /areas/130000/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'id'
+ERROR 2021-11-11 16:10:10,628 basehttp 154 "GET /areas/130000/ HTTP/1.1" 500 78244
+INFO 2021-11-11 16:10:12,104 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:10:12,107 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:10:12,108 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:10:12,109 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:11:28,888 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:11:31,475 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:11:31,479 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:11:31,484 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:11:31,484 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:11:33,551 basehttp 154 "GET /areas/120000/ HTTP/1.1" 200 97
+INFO 2021-11-11 16:11:34,406 basehttp 154 "GET /areas/120100/ HTTP/1.1" 200 793
+INFO 2021-11-11 16:11:56,041 basehttp 154 "GET /areas/120000/ HTTP/1.1" 200 97
+INFO 2021-11-11 16:11:57,079 basehttp 154 "GET /areas/120100/ HTTP/1.1" 200 793
+INFO 2021-11-11 16:13:59,333 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:15:45,287 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:16:16,700 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:16:22,070 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:16:22,074 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:16:22,078 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:16:22,079 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:16:26,419 basehttp 154 "GET /areas/120000/ HTTP/1.1" 200 97
+INFO 2021-11-11 16:16:27,384 basehttp 154 "GET /areas/120100/ HTTP/1.1" 200 793
+INFO 2021-11-11 16:19:49,274 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-11 16:19:49,863 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:20:48,188 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:21:58,410 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:22:15,332 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:22:55,609 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:23:17,883 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:23:17,948 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:23:17,950 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:23:20,300 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:23:20,352 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:23:20,353 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:23:24,917 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:23:24,960 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:23:24,960 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:23:25,696 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:23:25,697 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:23:25,699 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:23:25,700 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:23:26,420 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:23:26,427 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:23:26,428 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:23:26,429 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:23:29,992 basehttp 154 "GET /areas/130000/ HTTP/1.1" 200 657
+INFO 2021-11-11 16:23:30,732 basehttp 154 "GET /areas/130100/ HTTP/1.1" 200 1017
+INFO 2021-11-11 16:23:49,020 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:23:49,073 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:23:49,073 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:24:10,968 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-11 16:24:11,591 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:25:35,612 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:25:54,746 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:26:01,534 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:26:10,402 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:26:52,966 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:27:14,003 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:27:21,431 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:27:23,992 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:27:24,058 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:27:24,062 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:27:25,042 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:27:25,044 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:27:25,048 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:27:25,049 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:27:28,760 basehttp 154 "GET /areas/120000/ HTTP/1.1" 200 97
+INFO 2021-11-11 16:27:29,434 basehttp 154 "GET /areas/120100/ HTTP/1.1" 200 793
+INFO 2021-11-11 16:27:41,084 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:27:41,135 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:27:41,136 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:29:21,912 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:29:25,151 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:29:25,216 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:29:25,217 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:29:36,618 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:29:36,620 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:29:36,622 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:29:36,623 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:29:37,895 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:29:37,902 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:29:37,903 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:29:37,904 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:30:05,785 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 16:30:07,622 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 16:30:07,627 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 16:30:07,629 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 16:30:07,630 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 16:30:44,026 basehttp 154 "GET /areas/210000/ HTTP/1.1" 200 701
+INFO 2021-11-11 16:30:45,022 basehttp 154 "GET /areas/210300/ HTTP/1.1" 200 397
+INFO 2021-11-11 16:31:09,269 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:31:09,304 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:31:09,305 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:31:10,708 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:31:10,760 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:31:10,761 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:31:11,652 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:31:11,689 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:31:11,690 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:31:12,181 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:31:12,209 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:31:12,210 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:31:16,389 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:31:16,432 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:31:16,432 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:33:35,264 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:34:38,243 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:41:09,846 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:41:34,583 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:47:13,169 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:52:44,252 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 16:52:47,985 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 16:52:48,053 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 284, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 16:52:48,055 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85950
+INFO 2021-11-11 16:52:48,969 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 16:52:49,027 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 16:52:49,030 basehttp 154 "GET /addresses/ HTTP/1.1" 500 86014
+INFO 2021-11-11 16:52:49,731 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 16:52:49,793 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 259, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 16:52:49,794 basehttp 154 "GET /addresses/ HTTP/1.1" 500 86014
+INFO 2021-11-11 16:52:57,078 autoreload 203 D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py changed, reloading.
+INFO 2021-11-11 16:52:57,758 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:11:14,070 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:11:18,090 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 17:11:18,094 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 17:11:18,097 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 17:11:18,098 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 17:11:19,498 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:11:20,996 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 17:11:20,999 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 17:11:21,001 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 17:11:21,002 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 17:11:29,016 basehttp 154 "GET /areas/120000/ HTTP/1.1" 200 97
+INFO 2021-11-11 17:11:29,928 basehttp 154 "GET /areas/120100/ HTTP/1.1" 200 793
+INFO 2021-11-11 17:12:08,774 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:12:08,796 views 305 name 'Address' is not defined
+ERROR 2021-11-11 17:12:08,827 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 287, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 306, in post
+    return http.JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+NameError: name 'http' is not defined
+ERROR 2021-11-11 17:12:08,828 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93626
+INFO 2021-11-11 17:13:59,221 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:14:02,610 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:14:02,642 views 304 name 'Address' is not defined
+ERROR 2021-11-11 17:14:02,669 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 286, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 305, in post
+    return http.JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+NameError: name 'http' is not defined
+ERROR 2021-11-11 17:14:02,670 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93616
+WARNING 2021-11-11 17:14:06,841 base 102 Method Not Allowed (GET): /addresses/
+INFO 2021-11-11 17:14:06,842 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 17:14:06,844 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 17:14:06,845 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 17:14:40,475 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:14:43,854 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 17:14:43,860 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 17:14:43,863 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 17:14:43,863 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 17:14:56,495 basehttp 154 "GET /areas/110000/ HTTP/1.1" 200 97
+INFO 2021-11-11 17:14:57,541 basehttp 154 "GET /areas/110100/ HTTP/1.1" 200 799
+INFO 2021-11-11 17:15:20,902 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:15:20,928 views 304 name 'Address' is not defined
+ERROR 2021-11-11 17:15:20,954 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 286, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 305, in post
+    return JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+AttributeError: type object 'RETCODE' has no attribute 'DBERR'
+ERROR 2021-11-11 17:15:20,955 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93748
+INFO 2021-11-11 17:17:25,750 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:17:31,256 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 17:17:31,260 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 17:17:31,266 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 17:17:31,267 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 17:17:37,903 basehttp 154 "GET /areas/140000/ HTTP/1.1" 200 557
+INFO 2021-11-11 17:17:38,790 basehttp 154 "GET /areas/140200/ HTTP/1.1" 200 545
+INFO 2021-11-11 17:17:56,814 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:17:56,830 views 304 name 'Address' is not defined
+ERROR 2021-11-11 17:17:56,856 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 286, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 305, in post
+    return JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+AttributeError: type object 'RETCODE' has no attribute 'DBERR'
+ERROR 2021-11-11 17:17:56,857 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93656
+INFO 2021-11-11 17:18:32,588 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:18:46,577 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:18:50,055 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 17:18:50,058 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 17:18:50,063 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 17:18:50,064 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 17:18:53,568 basehttp 154 "GET /areas/210000/ HTTP/1.1" 200 701
+INFO 2021-11-11 17:18:54,510 basehttp 154 "GET /areas/210200/ HTTP/1.1" 200 541
+INFO 2021-11-11 17:19:09,158 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:19:09,199 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 258, in post
+    if count >= constants.USER_ADDRESS_COUNTS_LIMIT:
+NameError: name 'constants' is not defined
+ERROR 2021-11-11 17:19:09,200 basehttp 154 "POST /addresses/ HTTP/1.1" 500 85872
+INFO 2021-11-11 17:19:47,147 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:19:49,315 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 17:19:49,321 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 17:19:49,327 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 17:19:49,328 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 17:19:53,121 basehttp 154 "GET /areas/130000/ HTTP/1.1" 200 657
+INFO 2021-11-11 17:19:53,975 basehttp 154 "GET /areas/130400/ HTTP/1.1" 200 907
+INFO 2021-11-11 17:20:06,071 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:20:06,118 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 279, in post
+    return http.HttpResponseBadRequest('参数tel有误')
+NameError: name 'http' is not defined
+ERROR 2021-11-11 17:20:06,119 basehttp 154 "POST /addresses/ HTTP/1.1" 500 87622
+INFO 2021-11-11 17:20:51,245 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:20:51,283 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 279, in post
+    return http.HttpResponseBadRequest('参数tel有误')
+NameError: name 'http' is not defined
+ERROR 2021-11-11 17:20:51,283 basehttp 154 "POST /addresses/ HTTP/1.1" 500 87628
+INFO 2021-11-11 17:20:58,611 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:20:58,616 views 304 name 'Address' is not defined
+ERROR 2021-11-11 17:20:58,640 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 286, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 305, in post
+    return http.JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+NameError: name 'http' is not defined
+ERROR 2021-11-11 17:20:58,641 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93558
+INFO 2021-11-11 17:21:44,040 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:21:45,891 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+WARNING 2021-11-11 17:21:45,896 base 102 Method Not Allowed (GET): /addresses/
+WARNING 2021-11-11 17:21:45,900 log 228 Method Not Allowed: /addresses/
+WARNING 2021-11-11 17:21:45,902 basehttp 154 "GET /addresses/ HTTP/1.1" 405 0
+INFO 2021-11-11 17:21:53,624 basehttp 154 "GET /areas/110000/ HTTP/1.1" 200 97
+INFO 2021-11-11 17:21:54,271 basehttp 154 "GET /areas/110100/ HTTP/1.1" 200 799
+INFO 2021-11-11 17:22:06,510 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:22:06,531 views 304 name 'Address' is not defined
+ERROR 2021-11-11 17:22:06,556 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 286, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 305, in post
+    return JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+AttributeError: type object 'RETCODE' has no attribute 'DBERR'
+ERROR 2021-11-11 17:22:06,559 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93680
+INFO 2021-11-11 17:24:59,469 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:25:03,145 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:25:04,236 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:25:04,302 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:25:04,303 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:25:04,304 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:25:04,435 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:25:05,135 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:25:05,192 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:25:05,193 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:25:05,194 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:25:05,330 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:25:06,205 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:25:06,442 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:25:06,620 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:25:08,234 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:25:11,147 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:25:12,580 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:25:12,634 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:25:12,635 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:25:29,359 basehttp 154 "GET /areas/610000/ HTTP/1.1" 200 511
+INFO 2021-11-11 17:25:31,559 basehttp 154 "GET /areas/610100/ HTTP/1.1" 200 643
+INFO 2021-11-11 17:26:19,326 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:26:19,348 views 325 name 'Address' is not defined
+ERROR 2021-11-11 17:26:19,374 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 308, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 326, in post
+    return JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+AttributeError: type object 'RETCODE' has no attribute 'DBERR'
+ERROR 2021-11-11 17:26:19,375 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93713
+INFO 2021-11-11 17:30:26,093 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:30:26,111 views 325 name 'Address' is not defined
+ERROR 2021-11-11 17:30:26,135 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 308, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 326, in post
+    return JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+AttributeError: type object 'RETCODE' has no attribute 'DBERR'
+ERROR 2021-11-11 17:30:26,136 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93713
+INFO 2021-11-11 17:30:38,004 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:30:41,056 basehttp 154 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2021-11-11 17:30:41,095 views 325 name 'Address' is not defined
+ERROR 2021-11-11 17:30:41,122 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 308, in post
+    address = Address.objects.create(
+NameError: name 'Address' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 326, in post
+    return JsonResponse({'code': RETCODE.DBERR, 'errmsg': '新增地址失败'})
+AttributeError: type object 'RETCODE' has no attribute 'DBERR'
+ERROR 2021-11-11 17:30:41,124 basehttp 154 "POST /addresses/ HTTP/1.1" 500 93713
+INFO 2021-11-11 17:34:41,327 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:34:46,016 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:34:46,071 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:34:46,073 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:34:47,698 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:34:47,760 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:34:47,762 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:41,001 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:41,064 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:41,066 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:44,258 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:44,321 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:44,322 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:45,209 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:45,262 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:45,262 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:45,443 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:45,523 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:45,524 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:45,525 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:45,670 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:45,745 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:45,746 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:46,466 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:46,527 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:46,529 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:46,859 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:46,924 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:46,929 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:46,931 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:47,106 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:47,178 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:47,179 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:47,180 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:47,355 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:47,428 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:47,428 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:47,430 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:47,568 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:47,634 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:47,635 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:47,637 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:47,763 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:47,838 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:47,841 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:47,845 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:47,965 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:48,095 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:48,097 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:48,099 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:48,195 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:48,270 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:48,271 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:48,272 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:48,415 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:48,486 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:48,490 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:48,491 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:48,607 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:48,677 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:48,680 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:48,689 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:48,813 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:48,872 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:48,874 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:48,875 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:49,022 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:49,087 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:49,089 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:49,089 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:49,218 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:49,282 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:49,283 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:49,284 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:49,415 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:49,482 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:49,484 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:49,486 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:49,638 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:49,698 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:49,700 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:50,012 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:50,078 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:50,079 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:50,248 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:50,317 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:50,318 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:35:50,491 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:50,568 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:50,570 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:50,571 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:50,703 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:50,774 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:50,779 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+ERROR 2021-11-11 17:35:50,780 basehttp 154 "GET /addresses/ HTTP/1.1" 500 59
+INFO 2021-11-11 17:35:50,941 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:35:51,009 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:35:51,010 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85984
+INFO 2021-11-11 17:41:20,558 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:41:26,424 basehttp 154 "GET /info/ HTTP/1.1" 200 171
+INFO 2021-11-11 17:41:27,504 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:41:27,549 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:41:27,550 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85723
+INFO 2021-11-11 17:41:36,455 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:41:36,491 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:41:36,492 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85723
+INFO 2021-11-11 17:42:38,662 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:42:42,517 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+ERROR 2021-11-11 17:42:42,550 log 228 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\book\源码\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\utils\view_extend.py", line 12, in dispatch
+    return super().dispatch(request, * arge, ** kwargs)
+  File "D:\book\源码\venv\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\book\源码\meiduomall_-james\meiduo_project\apps\users\views.py", line 256, in get
+    addresses = Address.objects.filter(user=user, is_deleted=False)  # 获取当前用户下的所有没有被删除（逻辑）的所有地址信息
+NameError: name 'Address' is not defined
+ERROR 2021-11-11 17:42:42,551 basehttp 154 "GET /addresses/ HTTP/1.1" 500 85723
+INFO 2021-11-11 17:43:54,003 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-11-11 17:43:57,651 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-11-11 17:43:57,667 basehttp 154 "GET /addresses/ HTTP/1.1" 200 44
+INFO 2021-11-11 17:44:03,964 basehttp 154 "GET /areas/120000/ HTTP/1.1" 200 97
+INFO 2021-11-11 17:44:04,727 basehttp 154 "GET /areas/120100/ HTTP/1.1" 200 793
+INFO 2021-11-11 17:44:07,898 basehttp 154 "GET /areas/110000/ HTTP/1.1" 200 97
+INFO 2021-11-11 17:44:09,104 basehttp 154 "GET /areas/110100/ HTTP/1.1" 200 799
+INFO 2021-11-11 17:44:24,810 basehttp 154 "GET /areas/610000/ HTTP/1.1" 200 511
+INFO 2021-11-11 17:44:26,919 basehttp 154 "GET /areas/610400/ HTTP/1.1" 200 683
+INFO 2021-11-11 17:44:53,059 basehttp 154 "POST /addresses/ HTTP/1.1" 200 367
+INFO 2021-11-11 17:44:53,129 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2021-11-11 17:44:53,138 basehttp 154 "GET /addresses/ HTTP/1.1" 200 337

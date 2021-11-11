@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'apps.users',
     'apps.verification',
     'apps.oauth',
-    # 'apps.areas'
+    'apps.areas'
 
 ]
 
