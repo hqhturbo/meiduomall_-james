@@ -21,4 +21,8 @@ urlpatterns = [
     path('mobile/<mobile>/count/',MobileCountView.as_view()),
     path('emails/verification/', EmailVerifyView.as_view()),
     path('addresses/', CreateAddressViwe.as_view()),
+    path('addresses/<address_id>/',CreateAddressViwe.as_view()),
+    path('addresses/<address_id>/default/',AddressDefaultView.as_view()),
+    path('addresses/<address_id>/title/',UpdateTitleAddressVier.as_view()),
+    path('password/',ChangPasswordView.as_view()),
 ]

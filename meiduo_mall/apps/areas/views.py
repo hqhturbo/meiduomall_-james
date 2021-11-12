@@ -36,6 +36,7 @@ class SubAreasView(View):
 
         # 获取缓存数据
         data_list = cache.get(f'city:{id}')
+        print(data_list)
         if data_list is None:
 
             # 提供市或区数据
@@ -56,4 +57,19 @@ class SubAreasView(View):
             except Exception as e:
                 logger.error(e)
                 return JsonResponse({'code':400,'errmsg':'城市或区数据错误'})
-        return JsonResponse({'code':0,'errmsg':'ok','sub_data':sub_data})
+            return JsonResponse({'code': 0, 'errmsg': 'ok', 'sub_data': sub_data})
+        return JsonResponse({'code': 0, 'errmsg': 'ok', 'sub_data': data_list})
+
+
+        #     # 2.将对象转换为字典数据
+        #     data_list = []
+        #     for item in down_level:
+        #         data_list.append({
+        #             'id': item.id,
+        #             'name': item.name
+        #         })
+        #
+        #     # 缓存数据
+        #     cache.set(f'city:{id}', data_list, 24 * 3600)
+
+
