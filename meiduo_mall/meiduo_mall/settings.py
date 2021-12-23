@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'apps.users',
     'apps.verification',
     'apps.oauth',
-    'apps.areas'
+    'apps.areas',
+    'apps.ads',
+    'apps.goods',
+    'haystack', # 全文检索
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -62,7 +65,7 @@ ROOT_URLCONF = 'meiduo_mall.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR,'meiduo_mall/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -239,3 +242,35 @@ EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html'
 # pwhugqgmmwcfdefc
 # exqhaehxtmcsdfae
 # igwcbpdhfsssdebi
+
+# 指定自定义的Django文件存储类
+DEFAULT_FILE_STORAGE = 'utils.storage.FastDFSStorage'
+
+# FastDFS相关参数
+FDFS_BASE_URL = 'http://192.168.30.131:8888/'
+# FDFS_BASE_URL = 'http://image.meiduo.site:8888/'
+
+
+# Haystack
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://192.168.30.131:9200/', # Elasticsearch服务器ip地址，端口号固定为9200
+        'INDEX_NAME': 'meiduo_mall', # Elasticsearch建立的索引库的名称
+    },
+}
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 5
+# 当添加、修改、删除数据时，自动生成索引
+# HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+from celery.schedules import timedelta,crontab
+CELERY_BEAT_SCHEDULE = {
+    'celery_app.task.task1':{
+        'task':'celery_tasks.static_html.tasks.generate_static_index_html',
+        'schedule':timedelta(seconds=5),
+    },
+    'celery_app.task.task2': {
+        'task': 'celery_tasks.static_html.tasks.generate_static_detail_html',
+        'schedule': crontab(minute='*/2'),
+        # 'args': ()
+}
+}

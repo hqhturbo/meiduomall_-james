@@ -2,7 +2,7 @@ from django import http
 
 from django.contrib.auth import login, logout
 from django.shortcuts import render
-from django.http import JsonResponse, response
+from django.http import JsonResponse, response, HttpResponseBadRequest
 from django.views import View
 from apps.users.models import User, Address
 import json
@@ -175,6 +175,26 @@ class UserInfoView(LoginRequiredJsonMixin, View):
             }
             return JsonResponse({"code": 200, "errmsg": "ok", "info_data": user_info})
 
+    def post(self,request):
+        User = request.username
+        # 获取已经登录用户的信息
+        # 获取用户提交的用户名，如果没有就将已登录的用户名赋值
+        username = request.POST.get('username', User.username)
+        # 获取用户提交的介绍，如果没有就将已登录的介绍赋值
+        user_desc = request.POST.get('desc', username.user_desc)
+        # 2、将用户参数更新到数据库
+        try:
+            User.username = username
+            User.user_desc = user_desc
+        except Exception as e:
+            logger.error(e)
+            return HttpResponseBadRequest('修改用户信息失败')
+        # 3、更新cookie中的username
+        # 4、刷新当前页面（重定向操作）
+        resp = JsonResponse({"code": 200, "errmsg": "ok"})
+        resp.set_cookie('login_name', username.username)
+        # 5、返回相应
+        return resp
 
 class EmailView(View):
     """添加邮箱"""

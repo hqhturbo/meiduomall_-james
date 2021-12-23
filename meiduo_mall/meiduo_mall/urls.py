@@ -34,4 +34,5 @@ urlpatterns = [
     path('', include('apps.verification.urls')),
     path('', include('apps.oauth.urls')),
     path('', include('apps.areas.urls')),
+    path('', include('apps.ads.urls')),
 ]

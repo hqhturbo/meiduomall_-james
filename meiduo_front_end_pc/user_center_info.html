@@ -57,7 +57,8 @@
                 <div class="info_con clearfix">
                 <h3 class="common_title2">基本信息</h3>
                         <ul class="user_info_list">
-                            <li><span>昵称：</span>{{ username }}</li>
+                            <li><span>昵称：</span>{{ username }}</li><input v-model="username" type="text" name="username" value="{{ username }}"><input @click="" type="button" name="" value="修 改">
+                            
                             <li><span>手机号：</span>{{ mobile }}</li>
                             <li>
                                 <span>Email：</span>
